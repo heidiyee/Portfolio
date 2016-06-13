@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+    font-size: 62.5%;
+}
+
+#hy {
+    width: 50px;
+}
+
+nav {
+    border-top: 5px solid #000;
+    overflow: auto;
+    height: auto;
+    /*position: relative;*/
+    /*height: 100px;*/
+    background-image: url("../assets/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 65vw;
+}
+
+    nav h1 {
+        font-size: 2.4em;
+        margin: 1em 0;
+        display: inline-block;
+    }
+
+    nav img {
+        /*position: absolute;*/
+        display: inline-block;
+        float: left;
+        top:50%;
+        /*transform: translateY(-50%);*/
+        margin: 0 0 0 1em;
+    }
+
+    nav ul {
+        /*position: absolute;*/
+        display: inline-block;
+        float: right;
+        margin: 0 1em 0 0;
+        top: 50%;
+        color: #fff;
+        /*transform: translateY(-50%);*/
+    }
+
+    nav li {
+        margin: 1em 0;
+        font-size: 1.4em;
+        display: inline-block;
+    }
+
+ul {
+    padding: 0;
+    margin: 3em 0;
+}
+
+/* Image with text overlay */
+.intro {
+    position: relative;
+    /*border: 5px solid #000;*/
+    height: 100px;
+}
+
+    .intro img {
+        width: 100%;
+        display: block;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+        position: absolute;
+        color: #000;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
