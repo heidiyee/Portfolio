@@ -10,20 +10,24 @@ body {
     font-size: 62.5%;
 }
 
-#hy {
-    width: 50px;
+h3, h4 {
+    font-size: 1.8em;
+}
+
+/* background-size: cover is MAGICAL */
+header {
+    background-image: url("../assets/sunset.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
 }
 
 nav {
-    border-top: 5px solid #000;
+    /*border-top: 5px solid #000;*/
     overflow: auto;
     height: auto;
-    /*position: relative;*/
-    /*height: 100px;*/
-    background-image: url("../assets/sunset.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 65vw;
+    position: relative;
+    padding: 1em 0;
 }
 
     nav h1 {
@@ -33,27 +37,23 @@ nav {
     }
 
     nav img {
-        /*position: absolute;*/
         display: inline-block;
         float: left;
         top:50%;
-        /*transform: translateY(-50%);*/
         margin: 0 0 0 1em;
     }
 
     nav ul {
-        /*position: absolute;*/
         display: inline-block;
         float: right;
         margin: 0 1em 0 0;
         top: 50%;
         color: #fff;
-        /*transform: translateY(-50%);*/
     }
 
     nav li {
         margin: 1em 0;
-        font-size: 1.4em;
+        font-size: 1.8em;
         display: inline-block;
     }
 
@@ -62,11 +62,21 @@ ul {
     margin: 3em 0;
 }
 
+footer {
+    border-top: 1px solid gray;
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+#hy {
+    width: 145px;
+}
+
 /* Image with text overlay */
 .intro {
-    position: relative;
-    /*border: 5px solid #000;*/
-    height: 100px;
+    display: block;
 }
 
     .intro img {
@@ -75,7 +85,7 @@ ul {
     }
 
     .intro h2 {
-        font-size: 1.8em;
+        font-size: 5.0em;
         position: absolute;
         color: #000;
         margin: 0;
@@ -83,3 +93,17 @@ ul {
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
     }
+
+.work li {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.work li img {
+    width: 100%;
+}
+
+.about p {
+    text-align: left;
+    font-size: 1.4em;
+}
