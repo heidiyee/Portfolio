@@ -95,15 +95,35 @@ footer a:link {
     }
 
 .work li {
-    text-align: left;
+    text-align: center;
     font-size: 1.4em;
+    margin: 1em 0;
 }
 
+/* work images */
 .work li img {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
 }
 
 .about p {
     text-align: left;
     font-size: 1.4em;
+}
+
+@media only screen and (min-width: 770px) {
+    .work li {
+        display: inline-block;
+    }
+
+    .work li:nth-child(2n+1) {
+        clear: both;
+    }
+
+    .work li img {
+        width: 45%;
+        margin: 0 2.5%;
+    }
+
+
 }
