@@ -7,57 +7,72 @@
         <link type="text/css" rel="stylesheet" href="ui/stylesheet.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="index.html"><img id="hy" src="assets/heidiyee_white.png" alt="Heidi Yee" /></a>
+        <div id="main">
+            <header>
+                <nav class="nav-bar">
+                    <a href="index.html"><img id="hy" src="assets/heidiyee_white.png" alt="Heidi Yee" /></a>
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </nav>
+
+                <section class="intro">
+                    <h2>What up?</h2>
+                </section>
+            </header>
+
+            <section class="work" id="work">
+                <h3>Work</h3>
                 <ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>
+                        <img src="assets/imageHolder.png" alt="Kitchen Quest Project" />
+                        <p>Kitchen Quest</p>
+                    </li>
+                    <li>
+                        <img src="assets/imageHolder.png" alt="Nudge Project" />
+                        <p>Nudge</p>
+                    </li>
+                    <li>
+                        <img src="assets/imageHolder.png" alt="Blog Post" />
+                        <p>AP Blog</p>
+                    </li>
                 </ul>
-                <!-- <h1>Heidi Yee</h1> -->
-            </nav>
-            <section class="intro">
-                <h2>hello, my name is Heidi</h2>
-                <!-- <img src="assets/sunset.jpg" alt="" /> -->
             </section>
-        </header>
 
-        <section class="work">
-            <h3>Work</h3>
-            <ul>
-                <li>
-                    <img src="assets/imageHolder.png" alt="Kitchen Quest Project" />
-                    <p>Kitchen Quest</p>
-                </li>
-                <li>
-                    <img src="assets/imageHolder.png" alt="Nudge Project" />
-                    <p>Nudge</p>
-                </li>
-                <li>
-                    <img src="assets/imageHolder.png" alt="Blog Post" />
-                    <p>AP Blog</p>
-                </li>
-            </ul>
-        </section>
-        <section class="about">
             <div class="about-background">
-                <h4>About</h4>
-                <img src="assets/headshot.png" alt="" />
+                <section class="about" id="about">
+                        <h4>About</h4>
+                        <img src="assets/headshot.png" alt="" />
+                    <p>
+                        name is Heidi, went to UW, got a degree in IE, worked at Boeing for three years, wanted a creative outlet and looked into coding, went to cf to do iOS, learning front end on my own, interned at AP for analytics, iOS TA
+                    </p>
+                    <p>
+                        email: Heidi.n.yee[at]gmail.com
+                    </p>
+                </section>
             </div>
-            <p>
-                name is Heidi, went to UW, got a degree in IE, worked at Boeing for three years, wanted a creative outlet and looked into coding, went to cf to do iOS, learning front end on my own, interned at AP for analytics, iOS TA
-            </p>
-            <p>
-                email: Heidi.n.yee[at]gmail.com
-            </p>
+            <footer class="contact" id="contact">
+                <ul>
+                    <a href="https://github.com/heidiyee"><li>github</li></a>
+                    <a href="https://www.linkedin.com/in/heidiyee"><li>linkedin</li></a>
+                </ul>
+            </footer>
+        </div>
 
-        </section>
-        <footer>
+        <div id="nav-links" class="nav-links">
             <ul>
-                <a href="https://github.com/heidiyee"><li>github</li></a>
-                <a href="https://www.linkedin.com/in/heidiyee"><li>linkedin</li></a>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </footer>
+        </div>
+
+        <script src="ui/jquery-3.0.0.min.js"></script>
+        <script src="ui/menu.js"></script>
+        <script src="ui/scroll.js"></script>
     </body>
 </html>
