@@ -57,15 +57,17 @@ header {
     }
 
 
-/* Creating a menu button that transitions from three lines to an X */
+/*****************************************************************
+ Creating a menu button that transitions from three lines to an X
+ *****************************************************************/
 #nav-icon {
     display: inline-block;
     float: right;
     width: 35px;
     height: 40px;
     margin: 1em 2em 1em 2em;
-    top: 50%;
-    position: relative;
+    top: 1em;
+    right: 0;
     cursor: pointer;
 
     transform: rotate(0deg);
@@ -138,7 +140,8 @@ header {
 
 
 .nav-links {
-    float: right;
+    background-color: #E5EB6F;
+    float: left;
     right: 0;
     height: 100%;
     width: 0px;
@@ -212,6 +215,10 @@ footer a:link {
         margin: 0 5%;
     }
 
+.dot-slider {
+    display: none;
+}
+
 .about p {
     text-align: left;
     font-size: 1.4em;
@@ -230,11 +237,27 @@ footer a:link {
     padding: 1em;
 }
 
+
 @media only screen and (min-width: 770px) {
-    .work ul {
-        display: inline-flex;
-        background-color: gray;
+
+    .work {
+        height: 100vh;
     }
 
+        .work ul {
+            display: inline-flex;
+            background-color: gray;
+
+        }
+
+    ul.dot-slider {
+        background-color: #fff;
+    }
+
+    .dot-slider li {
+        color: #bbbcbc;
+        font-size: 1.6em;
+        padding: 0 .25em;
+    }
 
 }
