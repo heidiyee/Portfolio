@@ -1,5 +1,5 @@
 var navScroll = function () {
-    $('a[href^="#"]').on('click', function (event){
+    $('a[href*="#"]:not([href="#"])').on('click', function (event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             $('html, body').stop().animate({

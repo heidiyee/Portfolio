@@ -9,7 +9,7 @@
     <body>
         <div id="main">
             <header>
-                <nav class="nav-bar">
+                <nav class="nav-bar" id="home">
                     <a href="index.html"><img id="hy" src="assets/heidiyee_white.png" alt="Heidi Yee" /></a>
                     <div id="nav-icon">
                         <span></span>
@@ -27,52 +27,59 @@
 
             <section class="work" id="work">
                 <h3>Work</h3>
-                <ul>
-                    <li>
+                <ul class="work-slider">
+                    <li class="slide active-slide">
                         <img src="assets/imageHolder.png" alt="Kitchen Quest Project" />
                         <p>Kitchen Quest</p>
                     </li>
-                    <li>
+                    <li class="slide">
                         <img src="assets/imageHolder.png" alt="Nudge Project" />
                         <p>Nudge</p>
                     </li>
-                    <li>
+                    <li class="slide">
                         <img src="assets/imageHolder.png" alt="Blog Post" />
                         <p>AP Blog</p>
                     </li>
                 </ul>
 
                 <ul class="dot-slider">
-                    <li><a href="" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a></li>
-                    <li>&bull;</li>
-                    <li>&bull;</li>
-                    <li>&bull;</li>
-                    <li><a href="" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a></li>
+                    <li>
+                        <a href="javascript: void(0)" class="arrow-prev">
+                            <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png">
+                        </a>
+                    </li>
+                    <li class="dot active-dot">&bull;</li>
+                    <li class="dot">&bull;</li>
+                    <li class="dot">&bull;</li>
+                    <li>
+                        <a href="javascript: void(0)" class="arrow-next">
+                            <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png">
+                        </a>
+                    </li>
                 </ul>
             </section>
 
-            <div class="about-background">
-                <section class="about" id="about">
-                        <h4>About</h4>
-                        <img src="assets/headshot.png" alt="" />
-                    <p>
-                        name is Heidi, went to UW, got a degree in IE, worked at Boeing for three years, wanted a creative outlet and looked into coding, went to cf to do iOS, learning front end on my own, interned at AP for analytics, iOS TA
-                    </p>
-                    <p>
-                        email: Heidi.n.yee[at]gmail.com
-                    </p>
-                </section>
-            </div>
-            <footer class="contact" id="contact">
-                <ul>
-                    <a href="https://github.com/heidiyee"><li>github</li></a>
-                    <a href="https://www.linkedin.com/in/heidiyee"><li>linkedin</li></a>
-                </ul>
-            </footer>
+            <section class="about" id="about">
+                    <h4>About</h4>
+                    <img src="assets/headshot.png" alt="" />
+                <p>
+                    name is Heidi, went to UW, got a degree in IE, worked at Boeing for three years, wanted a creative outlet and looked into coding, went to cf to do iOS, learning front end on my own, interned at AP for analytics, iOS TA
+                </p>
+                <p>
+                    email: Heidi.n.yee[at]gmail.com
+                </p>
+            </section>
         </div>
+        <footer class="contact" id="contact">
+            <ul>
+                <a href="https://github.com/heidiyee"><li>github</li></a>
+                <a href="https://www.linkedin.com/in/heidiyee"><li>linkedin</li></a>
+            </ul>
+        </footer>
 
         <div id="nav-links" class="nav-links">
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -82,5 +89,6 @@
         <script src="ui/jquery-3.0.0.min.js"></script>
         <script src="ui/menu.js"></script>
         <script src="ui/scroll.js"></script>
+        <script src="ui/slides.js"></script>
     </body>
 </html>
