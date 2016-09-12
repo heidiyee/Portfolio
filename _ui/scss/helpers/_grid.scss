@@ -1,0 +1,27 @@
+$max-width: 1080px;
+
+//used mostly on divs to be the outer container of the section
+.container {
+    @include outer-container;
+}
+
+// to create grid layout for headings to the left and body to the right
+@media only screen and (min-width: 800px) {
+    .headings {
+        @include span-columns(4);
+    }
+
+    .columns-right {
+        @include span-columns(8);
+        @include omega();
+
+        .split-columns {
+            padding-bottom: 2em;
+            @include span-columns(4 of 8);
+
+            &:nth-child(2n) {
+                @include omega;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+//pushes things way off screen
+section {
+    text-align: center;
+
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: $pink;
+}
+
+h2 {
+    padding-top: 1em;
+    font-size: 2.4em;
+
+    &::after {
+        display: block;
+        padding-top: 0.25em;
+
+        content: "...";
+        color: $gray;
+    }
+}
+
+//--------Classes----------
+.offscreen {
+    display: block;
+    position: absolute;
+    left: -999999px;
+    top: -999999px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+}

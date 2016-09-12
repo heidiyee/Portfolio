@@ -1,0 +1,20 @@
+.hero {
+    position: relative;
+
+    .parallax {
+        background-image: url(../assets/fireworks_pink.jpg);
+
+        .container {
+
+            p {
+                // position: fixed;
+                font-family: "Kitty", cursive;
+                font-size: 3.6em;
+                color: $white;
+                text-align: left;
+
+                padding: 5em 20px;
+            }
+        }
+    }
+}

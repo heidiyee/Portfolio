@@ -1,0 +1,130 @@
+.nav-bar {
+    background-color: $white;
+
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 4;
+    box-shadow: 1px 1px 1px #ccc;
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        padding-top: 2em;
+
+        img {
+            position: absolute;
+            padding-left: 20px;
+            width: 150px;
+
+            z-index: 5;
+        }
+
+        #nav-icon {
+            display: inline-block;
+            position: absolute;
+            right: 2em;
+            top: 0.7em;
+            width: 3.0em;
+            height: 69px;
+            cursor: pointer;
+            z-index: 4;
+
+            transition: margin-right .5s;
+            transform: rotate(0deg);
+
+            span {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 5px;
+                background: $pink;
+                left: 0;
+
+                transform: rotate(0deg);
+                transition: all .25s ease-in-out;
+            }
+
+            span:nth-child(1) {
+                top: 26px;
+            }
+
+            span:nth-child(2), span:nth-child(3) {
+                top: 36px;
+            }
+
+            span:nth-child(4) {
+                top: 46px;
+            }
+        }
+
+        #nav-icon.open {
+            z-index: 4;
+
+            span:nth-child(1) {
+                top: 36px;
+                width: 0%;
+                left: 50%;
+            }
+
+            span:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            span:nth-child(4) {
+                top: 36px;
+                width: 0%;
+                left: 50%;
+            }
+        }
+
+        #nav-links {
+            position: absolute;
+            background-color: $white;
+            left: 100%;
+            width: 0;
+            height: 100vh;
+            top: 0;
+            overflow: hidden;
+            z-index: 3;
+            transition: .25s ease-in-out;
+
+            ul {
+                padding: 10em 0 2em;
+
+                li {
+                    font-size: 1.8em;
+                    text-align: center;
+                    position: relative;
+
+                    a {
+                        display: block;
+                        font-size: 1em;
+                        padding: 1em 0;
+                        border: none;
+                    }
+
+                    &:hover, &:focus {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        #nav-links.popup {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            z-index: 3;
+
+            transition: all .25s ease-in-out;
+        }
+    }
+
+}

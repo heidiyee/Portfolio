@@ -1,0 +1,246 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+@media only screen and (min-width: 800px) {
+  .headings {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .headings:last-child {
+      margin-right: 0; }
+  .columns-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-right: 0; }
+    .columns-right:last-child {
+      margin-right: 0; }
+    .columns-right .split-columns {
+      padding-bottom: 2em;
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .columns-right .split-columns:last-child {
+        margin-right: 0; }
+      .columns-right .split-columns:nth-child(2n) {
+        margin-right: 0; } }
+
+@font-face {
+  font-family: "Kitty";
+  src: url("../fonts/KittenSwashMonolineTrial.ttf") format("truetype");
+  font-weight: lighter; }
+
+@font-face {
+  font-family: "Kitty";
+  src: url("../fonts/KittenSwashTrial.ttf") format("truetype");
+  font-weight: normal; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-size: 62.5%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+section {
+  text-align: center;
+  z-index: 2; }
+
+a {
+  text-decoration: none;
+  color: #FFA7A7; }
+
+h2 {
+  padding-top: 1em;
+  font-size: 2.4em; }
+  h2::after {
+    display: block;
+    padding-top: 0.25em;
+    content: "...";
+    color: #999; }
+
+.offscreen {
+  display: block;
+  position: absolute;
+  left: -999999px;
+  top: -999999px; }
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; }
+
+.nav-bar {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 4;
+  -webkit-box-shadow: 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px #ccc; }
+  .nav-bar .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 2em; }
+    .nav-bar .container img {
+      position: absolute;
+      padding-left: 20px;
+      width: 150px;
+      z-index: 5; }
+    .nav-bar .container #nav-icon {
+      display: inline-block;
+      position: absolute;
+      right: 2em;
+      top: 0.7em;
+      width: 3.0em;
+      height: 69px;
+      cursor: pointer;
+      z-index: 4;
+      -webkit-transition: margin-right .5s;
+      transition: margin-right .5s;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg); }
+      .nav-bar .container #nav-icon span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: #FFA7A7;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out; }
+      .nav-bar .container #nav-icon span:nth-child(1) {
+        top: 26px; }
+      .nav-bar .container #nav-icon span:nth-child(2), .nav-bar .container #nav-icon span:nth-child(3) {
+        top: 36px; }
+      .nav-bar .container #nav-icon span:nth-child(4) {
+        top: 46px; }
+    .nav-bar .container #nav-icon.open {
+      z-index: 4; }
+      .nav-bar .container #nav-icon.open span:nth-child(1) {
+        top: 36px;
+        width: 0%;
+        left: 50%; }
+      .nav-bar .container #nav-icon.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+      .nav-bar .container #nav-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+      .nav-bar .container #nav-icon.open span:nth-child(4) {
+        top: 36px;
+        width: 0%;
+        left: 50%; }
+    .nav-bar .container #nav-links {
+      position: absolute;
+      background-color: #fff;
+      left: 100%;
+      width: 0;
+      height: 100vh;
+      top: 0;
+      overflow: hidden;
+      z-index: 3;
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      .nav-bar .container #nav-links ul {
+        padding: 10em 0 2em; }
+        .nav-bar .container #nav-links ul li {
+          font-size: 1.8em;
+          text-align: center;
+          position: relative; }
+          .nav-bar .container #nav-links ul li a {
+            display: block;
+            font-size: 1em;
+            padding: 1em 0;
+            border: none; }
+          .nav-bar .container #nav-links ul li:hover, .nav-bar .container #nav-links ul li:focus {
+            background-color: #fff; }
+    .nav-bar .container #nav-links.popup {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      z-index: 3;
+      -webkit-transition: all .25s ease-in-out;
+      transition: all .25s ease-in-out; }
+
+.hero {
+  position: relative; }
+  .hero .parallax {
+    background-image: url(../assets/fireworks_pink.jpg); }
+    .hero .parallax .container p {
+      font-family: "Kitty", cursive;
+      font-size: 3.6em;
+      color: #fff;
+      text-align: left;
+      padding: 5em 20px; }
+
+.portfolio {
+  background-color: #fff;
+  z-index: 4; }
+  .portfolio .container {
+    height: 500px; }
+
+.about .container {
+  height: 500px; }
