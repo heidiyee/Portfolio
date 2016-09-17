@@ -1,5 +1,25 @@
 .contact {
     .container {
-        
+        padding: 0 20px;
+
+        p {
+            padding-bottom: 2em;
+        }
+
+        form {
+            width: 100%;
+
+            input, textarea {
+                display: block;
+                background-color: $light-gray;
+
+                margin-bottom: 1em;
+                padding: 1em 1em;
+                width: 100%;
+
+                border: 1px solid $light-gray;
+
+            }
+        }
     }
 }

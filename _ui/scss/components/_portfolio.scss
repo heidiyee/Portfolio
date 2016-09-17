@@ -4,6 +4,30 @@
     z-index: 4;
 
     .container {
-        height: 500px;
+
+        a {
+            @include span-columns(12);
+            height: auto;
+            overflow: hidden;
+
+            &:hover {
+                // transform: scale(1.1);
+                //
+                // transition: transform 0.25s ease;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+
+                &:hover {
+                    // transform: scale(1.1);
+                    // //
+                    // transition: transform 0.25s ease;
+                }
+
+
+            }
+        }
     }
 }

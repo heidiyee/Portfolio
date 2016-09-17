@@ -2,7 +2,13 @@ var topMenu = function() {
 	$("#nav-icon").click(function(e) {
         $(this).toggleClass("open");
         $("#nav-links").toggleClass("popup");
-		//e.preventDefault();
+
+		if ($(this).hasClass("open")) {
+			
+		} else {
+			console.log("close");
+		}
+		e.preventDefault();
 	});
 };
 

@@ -1,0 +1,23 @@
+
+h2 {
+    padding: 2em 0 1em;
+    font-size: 2.4em;
+
+    &::after {
+        display: block;
+        padding-top: 0.25em;
+
+        content: "...";
+        color: $gray;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $pink;
+}
+
+p {
+    font-size: 1.6em;
+    padding: 0 20px;
+}

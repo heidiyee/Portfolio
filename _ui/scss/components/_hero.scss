@@ -2,16 +2,21 @@
     position: relative;
 
     .parallax {
-        background-image: url(../assets/fireworks_pink.jpg);
+        background-color: $cotton;
+        background: linear-gradient($cotton, $white);
+        background-attachment: fixed;
+
+        height: 500px;
 
         .container {
 
             p {
                 // position: fixed;
-                font-family: "Kitty", cursive;
+                // font-family: "Kitty", cursive;
                 font-size: 3.6em;
                 color: $white;
                 text-align: left;
+                cursor: default;
 
                 padding: 5em 20px;
             }

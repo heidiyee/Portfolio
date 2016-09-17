@@ -59,14 +59,14 @@ gulp.task('useref', function() {
         .pipe(useref())
         .pipe(gulpIf('_ui/js/*.js', uglify()))
         .pipe(gulpIf('_ui/css/*.css', cleanCSS()))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/_ui'))
 });
 
 //move fonts to dist folder
 gulp.task('fonts', function() {
     return gulp.src('_ui/fonts/**/*')
         .pipe(plumber({errorHandler: onError}))
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/_ui/fonts'))
 
 });
 
