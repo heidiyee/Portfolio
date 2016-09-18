@@ -1,6 +1,6 @@
 $(window).scroll( function(){
     /* Check the location of each desired element */
-    $('.faded').each( function(i){
+    $('.faded').each( function(e){
 
         var bottom_of_object = $(this).offset().top + $(this).outerHeight() /2;
         var bottom_of_window = $(window).scrollTop() + $(window).height();

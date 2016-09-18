@@ -115,62 +115,94 @@
                 </div>
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#">Portfolio</a></li><li id="selected" class="selected"><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
+                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="hero">
-            <div class="parallax">
-                <div class="container">
-                    <p>
-                        hi.<br>my name is heidi.<br>i'm a front-end developer <br>with a passion for problem solving.
-                    </p>
+        <main role="main">
+            <section class="hero">
+                <div class="parallax">
+                    <div class="container">
+                        <p>
+                            Hi, my name is Heidi<br>
+                            I'm a front end developer
+                            based in seattle
+                        </p>
+                    </div>
+
                 </div>
 
-            </div>
+            </section>
+            <section id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="container">
+                    <a class="faded" href="#nudge"><img src="_ui/assets/_nudge/nudge.jpg" alt="Nudge project" /></a>
+                    <a class="faded" href="#"><img src="_ui/assets/_fulcrum/fulcrum.jpg" alt="Fulcrum project" /></a>
+                    <a class="faded" href="#"><img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" /></a>
+                    <a class="faded" href="#"><img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" /></a>
+                </div>
 
-        </section>
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="container">
-                <a class="faded" href="#"><img src="_ui/assets/_nudge/nudge.jpg" alt="Nudge project" /></a>
-                <a class="faded" href="#"><img src="_ui/assets/_fulcrum/fulcrum.jpg" alt="Fulcrum project" /></a>
-                <a class="faded" href="#"><img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" /></a>
-                <a class="faded" href="#"><img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" /></a>
-            </div>
+            </section>
+            <section id="nudge" class="right">
+                <div class="container">
+                    <p>
+                        Why do we use it?
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<br><br>
 
-        </section>
-        <section class="about">
-            <h2 class="faded">About</h2>
-            <div class="container faded">
-                <!-- <img src="_ui/assets/scuba_yee.jpg" alt="" /> -->
-                <p >
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
 
-            </div>
+                        Where does it come from?
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<br><br>
 
-        </section>
-        <section class="contact">
-            <h2 class="faded">Contact</h2>
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+                        Where can I get some?
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </section>
+
+            <section class="about">
+                <h2 class="faded">About</h2>
+                <div class="container faded">
+                    <!-- <img src="_ui/assets/scuba_yee.jpg" alt="" /> -->
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+
+                </div>
+
+            </section>
+            <section class="contact">
+                <h2 class="faded">Contact</h2>
+                <div class="container faded">
+                    <p>
+                        How's it going?
+                    </p>
+                    <form class="" action="index.html" method="post">
+                        <input type="text" name="name" placeholder="NAME">
+                        <input type="email" name="email" placeholder="EMAIL">
+                        <textarea name="message" rows="8" placeholder="MESSAGE"></textarea>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
             <div class="container">
                 <p>
-                    How's it going?
+                    &copy; Made by Heidi Yee - Developer 2016
                 </p>
-                <form class="" action="index.html" method="post">
-                    <input type="text" name="name" placeholder="NAME">
-                    <input type="email" name="email" placeholder="EMAIL">
-                    <textarea name="message" rows="8" placeholder="MESSAGE"></textarea>
-                </form>
             </div>
-        </section>
+        </footer>
 
 
         <!--build:js js/main.min.js -->
         <script src="_ui/js/jquery-3.0.0.min.js"></script>
-        <script src="_ui/js/nav.js"></script>
+        <script src="_ui/js/scrolling.js"></script>
         <script src="_ui/js/menu.js"></script>
+        <script src="_ui/js/smoothScroll.js"></script>
         <script src="_ui/js/faded.js"></script>
         <!-- endbuild -->
     </body>
