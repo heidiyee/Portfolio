@@ -1,3 +1,15 @@
-header {
-    
+header.nudge {
+    .parallax {
+        background-image: url(../assets/_nudge/nudge.jpg);
+        background-size: 200% auto;
+        background-position: top 8em center;
+    }
+}
+
+header.fulcrum {
+    .parallax {
+        background-image: url(../assets/_fulcrum/fulcrum_large.jpg);
+        background-size: 200% auto;
+        background-position: top 8em center;
+    }
 }

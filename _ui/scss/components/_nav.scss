@@ -170,3 +170,15 @@
     height: 0;
     overflow: hidden;
 }
+
+.nav-bar-summary {
+    @extend .nav-bar;
+
+    .container {
+        svg {
+            .st0 {
+                fill: $gray;
+            }
+        }
+    }
+}

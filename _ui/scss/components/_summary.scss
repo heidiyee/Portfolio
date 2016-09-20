@@ -1,0 +1,49 @@
+.summary {
+    text-align: left;
+
+    padding-bottom: 20em;
+
+    .container {
+        padding: 0 20px;
+
+        h2 {
+
+            // &:after {
+            //     margin-left: 35px;
+            // }
+        }
+
+        .parallax.slide-1 {
+            background-image: url(../assets/_nudge/nudge_responsive.jpg);
+        }
+
+        a {
+            display: block;
+            padding-top: 2em;
+
+            font-size: 1.8em;
+            text-align: center;
+
+        }
+
+        img {
+            border: 2px solid #000;
+
+            max-width: 100%;
+        }
+
+        ul {
+            padding: 2em 0;
+
+            li {
+                display: inline-block;
+                padding: 0.5em 1em;
+
+                border: 1px solid $black;
+                border-radius: 20em;
+            }
+        }
+    }
+
+
+}

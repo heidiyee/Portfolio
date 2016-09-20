@@ -2,16 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Heidi Yee</title>
+        <title>Fulcrum|Heidi Yee</title>
 
         <!--build:css css/styles.min.css-->
         <link rel="stylesheet" href="_ui/css/main.css">
         <!--endbuild-->
     </head>
     <body>
-        <h1 class="offscreen">Heidi Yee's Website</h1>
-        <nav class="nav-bar">
+        <nav class="nav-bar-summary sticky">
             <div class="container">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="0 0 149.1 32.9" style="enable-background:new 0 0 149.1 32.9;" xml:space="preserve">
@@ -108,10 +106,10 @@
 
 
                 <div id="nav-icon">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
                 </div>
                 <div id="nav-links">
                     <ul>
@@ -120,59 +118,46 @@
                 </div>
             </div>
         </nav>
-        <main role="main">
-            <section class="hero">
-                <div class="parallax slide-1">
-                    <div class="container">
-                        <p>
-                            Hi, my name is Heidi<br>
-                            I'm a front end developer
-                            based in seattle
-                        </p>
-                    </div>
+        <div class="filler"></div>
+        <header class="fulcrum">
+            <div class="parallax">
 
-                </div>
+            </div>
+        </header>
 
-            </section>
-            <section id="portfolio" class="portfolio">
-                <h2>Portfolio</h2>
-                <div class="container">
-                    <a class="faded details" href="nudge.html"><img src="_ui/assets/_nudge/nudge.jpg" alt="Nudge project" /></a>
-                    <a class="faded details" href="fulcrum.html"><img src="_ui/assets/_fulcrum/fulcrum.jpg" alt="Fulcrum project" /></a>
-                    <a class="faded details" href="#"><img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" /></a>
-                    <a class="faded details" href="#"><img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" /></a>
+        <section class="summary">
+            <div class="container">
+                <h1>Fulcrum</h1>
 
-                </div>
+                <p class="font-gray">
+                    based on fulcrumfoundation.org
+                </p>
+                <ul class="subtitle">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>jQuery</li>
+                </ul>
+                <p>
+                    With the help from my friends at Turnstyle, a local design agency, I was able to work on several projects they had finished using their design comps, starting with Fulcrum. I was very excited to start working on Fulcrum since it was my first website using a design comp as a guide and my first website using jQuery.
 
-            </section>
+                </p>
+                <a class="faded" href="http://theheidiyee.com/Fulcrum/" target="_blank" >Check it out</a>
+                <!-- <div class="parallax slide-1">
 
-            <section class="about">
-                <h2 class="faded">About</h2>
-                <div class="container faded">
-                    <!-- <img src="_ui/assets/scuba_yee.jpg" alt="" /> -->
-                    <p >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                </div> -->
+                <img src="_ui/assets/_fulcrum/menu.gif" alt="" />
 
-                </div>
+                <h2 class="faded">Lessons Learned</h2>
+                <p class="faded">
+                    My biggest lesson learned was just how much you can do with jQuery and how to use it. When I started off, I got lost in jQuery’s API and tried to make sense of all the different functions it provides. I studied from both treehouse and codecademy to help further understand how to call the functions and target elements from my markup. Fulcrum was probably my longest project to complete since I was experimenting a lot with it. <br><br>
+                    Another lesson learned was acknowledging that sometimes using a plugin can save you a lot of time instead of building the functionality from scratch (especially when you’re a jQuery n00b like I was). I spent hours trying to build a second level menu that slides in and slides out. I read countless tutorials, spent so much time on jQuery’s API, and even browsed some plugins I could use when I felt like giving up. <br><br>
 
-            </section>
-            <section class="contact">
-                <h2 class="faded">Contact</h2>
-                <div class="container faded">
-                    <p>
-                        How's it going?
-                    </p>
-                    <form class="" action="index.html" method="post">
-                        <input type="text" name="name" placeholder="NAME">
-                        <input type="email" name="email" placeholder="EMAIL">
-                        <textarea name="message" rows="8" placeholder="MESSAGE"></textarea>
-                    </form>
-                </div>
-            </section>
-        </main>
+                    When I finally got my menu transitions to work, I was beyond excited. However, I realized that if I was on a deadline and needed to get things done quickly, building out everything from scratch might have not been the way to go. Either way, I’m still very proud of what I accomplished.
 
+                </p>
+            </div>
 
+        </section>
         <footer>
             <div class="container">
                 <p>
@@ -180,7 +165,6 @@
                 </p>
             </div>
         </footer>
-
 
         <!--build:js js/main.min.js -->
         <script src="_ui/js/jquery-3.0.0.min.js"></script>
