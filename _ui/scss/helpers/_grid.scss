@@ -4,3 +4,12 @@ $max-width: 1000px;
 .container {
     @include outer-container;
 }
+
+//individual project pages
+// .headings {
+//     @include span-columns();
+// }
+//
+// .to-the-right {
+//     @include span-columns();
+// }

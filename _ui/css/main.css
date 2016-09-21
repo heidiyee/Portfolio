@@ -135,6 +135,16 @@ header.fulcrum .parallax {
   background-size: 200% auto;
   background-position: top 8em center; }
 
+header.rockbox .parallax {
+  background-image: url(../assets/_rockbox/rockbox.jpg);
+  background-size: 135% auto;
+  background-position: top 8em center; }
+
+header.clutch .parallax {
+  background-image: url(../assets/_clutch/clutch.jpg);
+  background-size: 152% auto;
+  background-position: top 8em right; }
+
 .nav-bar, .nav-bar-summary {
   position: fixed;
   background-color: transparent;
@@ -300,8 +310,10 @@ header.fulcrum .parallax {
 
 .about {
   padding-bottom: 3em; }
-  .about .container img {
-    width: 100%; }
+  .about .container {
+    padding: 0 20px; }
+    .about .container img {
+      width: 100%; }
 
 .contact .container {
   padding: 0 20px 20em; }
@@ -341,6 +353,10 @@ footer.appear {
   padding-bottom: 20em; }
   .summary .container {
     padding: 0 20px; }
+    .summary .container h2 {
+      padding-bottom: 0; }
+      .summary .container h2:after {
+        content: ""; }
     .summary .container .parallax.slide-1 {
       background-image: url(../assets/_nudge/nudge_responsive.jpg); }
     .summary .container a {
@@ -349,12 +365,13 @@ footer.appear {
       font-size: 1.8em;
       text-align: center; }
     .summary .container img {
-      border: 2px solid #000;
+      padding: 2em 0;
       max-width: 100%; }
     .summary .container ul {
       padding: 2em 0; }
       .summary .container ul li {
         display: inline-block;
         padding: 0.5em 1em;
+        margin-bottom: 5px;
         border: 1px solid #000;
         border-radius: 20em; }

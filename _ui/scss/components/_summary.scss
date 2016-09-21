@@ -7,10 +7,11 @@
         padding: 0 20px;
 
         h2 {
+            padding-bottom: 0;
 
-            // &:after {
-            //     margin-left: 35px;
-            // }
+            &:after {
+                content: "";
+            }
         }
 
         .parallax.slide-1 {
@@ -27,7 +28,8 @@
         }
 
         img {
-            border: 2px solid #000;
+            // border: 2px solid #000;
+            padding: 2em 0;
 
             max-width: 100%;
         }
@@ -38,6 +40,7 @@
             li {
                 display: inline-block;
                 padding: 0.5em 1em;
+                margin-bottom: 5px;
 
                 border: 1px solid $black;
                 border-radius: 20em;

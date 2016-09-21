@@ -13,3 +13,19 @@ header.fulcrum {
         background-position: top 8em center;
     }
 }
+
+header.rockbox {
+    .parallax {
+        background-image: url(../assets/_rockbox/rockbox.jpg);
+        background-size: 135% auto;
+        background-position: top 8em center;
+    }
+}
+
+header.clutch {
+    .parallax {
+        background-image: url(../assets/_clutch/clutch.jpg);
+        background-size: 152% auto;
+        background-position: top 8em right;
+    }
+}
