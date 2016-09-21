@@ -1,3 +1,7 @@
+h1 {
+    padding: 24px 0 6px;
+    font-size: 3.6em;
+}
 
 h2 {
     padding: 2em 0 1em;
@@ -14,10 +18,30 @@ h2 {
 
 a {
     text-decoration: none;
-    color: $pink;
+    color: $cotton;
 }
 
 p {
     font-size: 1.6em;
-    padding: 0 20px;
+}
+
+ul li {
+    font-size: 1.6em;
+}
+
+// classes
+.font-gray {
+    color: $font-gray;
+}
+
+.subtitle {
+    &::after {
+        display: block;
+        padding: 0.25em 0 1em;
+
+        font-size: 24px;
+
+        content: "...";
+        color: $gray;
+    }
 }

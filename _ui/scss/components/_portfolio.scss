@@ -5,6 +5,7 @@
 
     .container {
 
+
         a {
             @include span-columns(12);
             height: auto;
@@ -29,6 +30,14 @@
 
 
             }
+        }
+
+        .right {
+
+            top: 0;
+            left: 100%;
+            width: 100%;
+
         }
     }
 }
