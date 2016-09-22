@@ -15,16 +15,6 @@ html {
     content: "";
     display: table; }
 
-@font-face {
-  font-family: "Kitty";
-  src: url("../fonts/KittenSwashMonolineTrial.ttf") format("truetype");
-  font-weight: lighter; }
-
-@font-face {
-  font-family: "Kitty";
-  src: url("../fonts/KittenSwashTrial.ttf") format("truetype");
-  font-weight: normal; }
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -92,13 +82,20 @@ section {
 .filler {
   height: 80px; }
 
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400; }
+
 h1 {
   padding: 24px 0 6px;
+  font-family: 'Dosis', sans-serif;
   font-size: 3.6em; }
 
 h2 {
   padding: 2em 0 1em;
-  font-size: 2.4em; }
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.4em;
+  font-weight: bold; }
   h2::after {
     display: block;
     padding-top: 0.25em;
@@ -282,6 +279,7 @@ header.clutch .parallax {
     background-attachment: fixed;
     height: 500px; }
     .hero .parallax .container p {
+      font-family: "Sniglet", cursive;
       font-size: 3.6em;
       color: #fff;
       text-align: center;
@@ -292,6 +290,7 @@ header.clutch .parallax {
   background-color: #fff;
   z-index: 4; }
   .portfolio .container a {
+    position: relative;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -300,9 +299,38 @@ header.clutch .parallax {
     overflow: hidden; }
     .portfolio .container a:last-child {
       margin-right: 0; }
-    .portfolio .container a img {
+    .portfolio .container a figure img {
       display: block;
       width: 100%; }
+    .portfolio .container a figure figcaption {
+      position: absolute;
+      bottom: -40px;
+      left: 20px;
+      font-family: 'Karla', sans-serif;
+      font-size: 3.2em;
+      font-weight: bolder;
+      color: #FFA7A7;
+      -webkit-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease;
+      z-index: 2; }
+    .portfolio .container a figure::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      -webkit-transition: background-color 0.25s ease;
+      transition: background-color 0.25s ease; }
+    .portfolio .container a:hover figure::after {
+      background-color: rgba(0, 0, 0, 0.7);
+      -webkit-transition: background-color 0.25s ease;
+      transition: background-color 0.25s ease; }
+    .portfolio .container a:hover figcaption {
+      bottom: 40px;
+      -webkit-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease; }
   .portfolio .container .right {
     top: 0;
     left: 100%;
