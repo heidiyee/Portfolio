@@ -20,6 +20,14 @@
                 border: 1px solid $light-gray;
 
             }
+
+            input.red, textarea.red {
+                border: 1px solid $red;
+            }
+
+            .submit {
+                width: 20%;
+            }
         }
     }
 }

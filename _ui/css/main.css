@@ -386,6 +386,10 @@ header.clutch .parallax {
       padding: 1em 1em;
       width: 100%;
       border: 1px solid #eeeeee; }
+    .contact .container form input.red, .contact .container form textarea.red {
+      border: 1px solid #ff0000; }
+    .contact .container form .submit {
+      width: 20%; }
 
 footer {
   background-color: #fff;
