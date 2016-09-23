@@ -5,9 +5,33 @@
         padding: 0 20px;
 
         img {
+            margin-top: 3em;
+
             width: 100%;
+            border-radius: 2em;
         }
 
     }
 
+}
+
+@media only screen and (min-width: 750px) {
+    .about {
+        .container {
+            p, img {
+                @include span-columns(6);
+            }
+
+            p {
+                float: right;
+                @include omega();
+                text-align: left;
+            }
+
+            img {
+                margin-top: 0;
+            }
+
+        }
+    }
 }
