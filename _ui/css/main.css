@@ -336,12 +336,42 @@ header.clutch .parallax {
     left: 100%;
     width: 100%; }
 
+@media only screen and (min-width: 750px) {
+  .portfolio .container a {
+    display: table-cell;
+    width: 50%;
+    margin-right: 0;
+    height: 300px; }
+    .portfolio .container a figure {
+      height: 100%; }
+      .portfolio .container a figure img {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; } }
+
 .about {
   padding-bottom: 3em; }
   .about .container {
     padding: 0 20px; }
     .about .container img {
-      width: 100%; }
+      margin-top: 3em;
+      width: 100%;
+      border-radius: 2em; }
+
+@media only screen and (min-width: 750px) {
+  .about .container p, .about .container img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .about .container p:last-child, .about .container img:last-child {
+      margin-right: 0; }
+  .about .container p {
+    float: right;
+    margin-right: 0;
+    text-align: left; }
+  .about .container img {
+    margin-top: 0; } }
 
 .contact .container {
   padding: 0 20px 20em; }
