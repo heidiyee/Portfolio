@@ -1,13 +1,14 @@
 .contact {
     .container {
-        padding: 0 20px 20em;
+        padding-bottom: 20em;
 
-        p {
+        #result {
             padding-bottom: 2em;
         }
 
-        form {
-            width: 100%;
+        .form {
+            @include span-columns(10);
+            @include shift(1);
 
             input, textarea {
                 display: block;
@@ -34,6 +35,25 @@
                 background-color: $pink;
                 width: 40%;
                 font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .contact {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .form {
+                @include span-columns(12);
+                @include shift(0);
+                #name, #email {
+                    @include span-columns(6);
+                    @include shift(0);
+                    @include omega(2n);
+                }
             }
         }
     }

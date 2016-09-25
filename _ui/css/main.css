@@ -89,7 +89,8 @@ body {
 h1 {
   padding: 24px 0 6px;
   font-family: 'Dosis', sans-serif;
-  font-size: 3.6em; }
+  font-size: 3.6em;
+  font-weight: bold; }
 
 h2 {
   padding: 2em 0 40px;
@@ -405,12 +406,18 @@ header.clutch .parallax {
       margin-top: 0; } }
 
 .contact .container {
-  padding: 0 20px 20em; }
-  .contact .container p {
+  padding-bottom: 20em; }
+  .contact .container #result {
     padding-bottom: 2em; }
-  .contact .container form {
-    width: 100%; }
-    .contact .container form input, .contact .container form textarea {
+  .contact .container .form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%; }
+    .contact .container .form:last-child {
+      margin-right: 0; }
+    .contact .container .form input, .contact .container .form textarea {
       display: block;
       background-color: #eeeeee;
       margin-bottom: 1em;
@@ -420,14 +427,39 @@ header.clutch .parallax {
       border-radius: 5px;
       -webkit-transition: border 0.25s linear;
       transition: border 0.25s linear; }
-    .contact .container form input.red, .contact .container form textarea.red {
+    .contact .container .form input.red, .contact .container .form textarea.red {
       border: 1px solid #ff0000;
       -webkit-transition: border 0.25s linear;
       transition: border 0.25s linear; }
-    .contact .container form .submit {
+    .contact .container .form .submit {
       background-color: #FFA7A7;
       width: 40%;
       font-size: 1.2em; }
+
+@media only screen and (min-width: 750px) {
+  .contact .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .contact .container .form {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-left: 0%; }
+      .contact .container .form:last-child {
+        margin-right: 0; }
+      .contact .container .form #name, .contact .container .form #email {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 0%; }
+        .contact .container .form #name:last-child, .contact .container .form #email:last-child {
+          margin-right: 0; }
+        .contact .container .form #name:nth-child(2n), .contact .container .form #email:nth-child(2n) {
+          margin-right: 0; }
+        .contact .container .form #name:nth-child(2n+1), .contact .container .form #email:nth-child(2n+1) {
+          clear: left; } }
 
 footer {
   background-color: #fff;
