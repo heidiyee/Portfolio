@@ -5,7 +5,9 @@ var hero = $(".hero"),
 
 //for showing the nav when scrolling up
 var scrollTop,
-    lastScrollTop = 0;
+    lastScrollTop = 0,
+    //if user is scrolling up, add space to scrollTop
+    extraSpace = false;
 
 
 //showing footer at the very end
@@ -20,7 +22,7 @@ $(window).scroll(function(){
 
     // fade in and out hero text
     if (scrollTop < 500) {
-        hero.css("opacity", 1 - scrollTop / 350);
+        hero.css("opacity", 1 - scrollTop / 250);
     }
 
     // stick the nav bar up at the top momentarily
@@ -30,6 +32,8 @@ $(window).scroll(function(){
         $(".line").addClass('gray');
     } else {
         navBar.removeClass('sticky');
+        $(".st0").removeClass('gray');
+        $(".line").removeClass('gray');
     }
 
     //hide nav-bar
@@ -37,6 +41,8 @@ $(window).scroll(function(){
         //overflow is hidden to hide svg and nav-icon
         navBar.addClass("hide");
         upOrDown();
+    } else {
+        extraSpace = false;
     }
 
     if(scrollTop + window.innerHeight == getDocHeight()) {
@@ -46,17 +52,19 @@ $(window).scroll(function(){
     }
 });
 
+//returns true if scrolling down, returns false if scrolling up
 function upOrDown() {
-    //scrolling up, want to show nav-icon
 
     if (lastScrollTop > scrollTop) {
+        //scrolling up
         navBar.removeClass("hide");
         lastScrollTop = scrollTop;
-
-    } else { //scrolling down, hide nav-icon
+    } else {
+        //scrolling down, hide nav-icon
         navBar.addClass("hide");
-        lastScrollTop = scrollTop;
     }
+    lastScrollTop = scrollTop;
+
 };
 
 function getDocHeight() {

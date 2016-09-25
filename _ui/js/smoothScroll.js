@@ -2,23 +2,26 @@ var smoothScroll = function() {
     $('a[href*="#"]:not([href="#"])').on('click', function (event) {
         event.preventDefault();
 
+        var upTop;
         var target = $(this.getAttribute('href'));
+        var t = $(window).scrollTop();
+
         if (target.length) {
-            console.log("hello");
+            $('body').css("overflow", "auto");
             $("#nav-icon").removeClass("open");
             $("#nav-links").removeClass("popup");
-            $(".nav-bar").addClass("hide");
+            upTop = target.offset().top;
+
+            if (upTop < t) {
+                upTop -= navBar.outerHeight();
+                console.log("scroll down " + upTop);
+            }
 
             $('html, body').stop().animate({
-                scrollTop: target.offset().top
+                scrollTop: upTop
             }, 700);
-
         }
     });
 };
-
-// $(document).ready(function(){
-//     $('input, textarea').placeholder();
-// });
 
 $(document).ready(smoothScroll);

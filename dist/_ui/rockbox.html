@@ -2,17 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Heidi Yee</title>
+        <title>Rock Box|Heidi Yee</title>
 
-        <!--build:css css/styles.min.css-->
-        <link rel="stylesheet" href="_ui/css/main.css">
-        <!--endbuild-->
+        <link rel="stylesheet" href="css/styles.min.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis:500,700|Karla|Sniglet" rel="stylesheet">
     </head>
     <body>
-        <h1 class="offscreen">Heidi Yee's Website</h1>
-        <nav class="nav-bar">
+        <nav class="nav-bar-summary sticky">
             <div class="container">
                 <a href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -111,101 +107,74 @@
 
 
                 <div id="nav-icon">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
                 </div>
-
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><!-- hello--></li>
+                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main role="main">
-            <section class="hero">
-                <div class="parallax slide-1">
-                    <div class="container">
-                        <p>
-                            Hi, my name is Heidi<br>
-                            I'm a front end developer
-                            based in seattle
-                        </p>
-                    </div>
+        <div class="filler"></div>
+        <header class="rockbox">
+            <div class="parallax">
 
-                </div>
+            </div>
+        </header>
 
-            </section>
-            <section id="portfolio" class="portfolio">
-                <h2>Portfolio</h2>
-                <div class="container">
-                    <a class="faded details" href="nudge.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_nudge/nudge.jpg" alt="Nudge project" />
-                            <figcaption>
-                                Nudge
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="fulcrum.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_fulcrum/fulcrum.jpg" alt="Fulcrum project" />
-                            <figcaption>
-                                Fulcrum
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="rockbox.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" />
-                            <figcaption>
-                                Rock Box
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="clutch.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" />
-                            <figcaption>
-                                Clutch
-                            </figcaption>
-                        </figure>
-                    </a>
+        <section class="summary">
+            <div class="container">
+                <h1>Rock Box</h1>
 
-                </div>
+                <p class="font-gray">
+                    based on design from Turnstyle, built using:
+                </p>
 
-            </section>
+                <ul class="subtitle">
+                    <li>html</li>
+                    <li>sass</li>
+                    <li>jQuery</li>
+                    <li>gulp</li>
+                </ul>
+                <p>
+                    Rock Box is a local karaoke place here in Seattle, so I was very excited to start working on this project. Here is a link if you want to check out their actual site - www.rockboxseattle.com, which looks like an old flash site and could really use a makeover. This design also came from Turnstyle - cause they’re awesome. <br><br>
 
-            <section id="about" class="about">
-                <h2 class="faded">About</h2>
-                <div class="container faded">
-
-                    <p >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <img src="_ui/assets/scuba_yee.jpg" alt="" />
-
-                </div>
-
-            </section>
-            <section id="contact" class="contact">
-                <h2 class="faded">Contact</h2>
-                <div class="container faded">
-                    <p id="result">
-                        How's it going?
-                    </p>
-                    <form class="form" method="post">
-                        <input type="text" name="name" id="name" placeholder="NAME *" required>
-                        <input type="email" name="email" id="email" placeholder="EMAIL *" required>
-                        <textarea name="message" id="message" rows="8" placeholder="MESSAGE *" required></textarea>
-                        <input id="submit" class="submit" type="submit" value="Submit">
-                    </form>
-                </div>
-            </section>
-        </main>
+                    Since this was my third project and I was getting really comfortable with html, css, and jQuery, I wanted to try out sass. I had already heard a lot about sass from other developers and was told it can really help organize your project. With sass, I also learned gulp and am so happy I did. Gulp is pretty easy to use and gave me the ability to auto load my page, which I loveeee, as well as consolidate everything into one final folder. Awesome stuff.
 
 
+                </p>
+                <a class="faded" href="http://theheidiyee.com/RockBox/" target="_blank" >Check it out</a>
+                <!-- <div class="parallax slide-1">
+
+                </div> -->
+
+
+                <h2 class="faded">Lessons Learned</h2>
+                <ul class="subtitle">
+                    <li>web design</li>
+                    <li>illustrator</li>
+                </ul>
+                <p>
+                    Rock Box turned out to be a really difficult project to work on for a couple reasons, mostly because I know nothing about design. The design came in a desktop layout, so I had to create it’s mobile layout, which was a challenge for me since I didn’t have to for the last two project. One of the challenges was incorporating all the images on a small screen.  I decided to take out the bigger images, such as the person singing, until it was viewed on a wider screen. I think this helped a lot and I feel like the mobile layout turned out well. <br><br>
+
+                    Another concept I learned was the hero doesn’t have to be the full height of the screen. I had used 100vh for the hero section in fulcrum, so I thought that would be the same case for any hero image on any site. This is not true and I found out this can give you issues if the height of the screen is not large enough to fit all the content. I started to notice that text would scrunch together in smaller mobile screens. I ended up making a height media query to fix this, but this taught me a valuable lesson that every site is different and what I did on the last site might not work well on the next. <br><br>
+
+                    As I started to build out the desktop layout of Rock Box, I noticed the sections weren’t aligning to each other and the site didn’t look cohesive. Since I was using sass to build the project, each section had its own sass file. This came with its pros and cons. Pros was it kept my project organized and I was able to build each section’s css independent from each other. However, that also brought a con with it, which was that the margins and paddings of each section may not align with each other, especially because the content switched between text-align center or text-align to the left. If you looked at the project from top to bottom, you didn’t see any vertical alignment. For example, from the picture below, you can see that the footer doesn’t not align with the section above it. I struggled a lot with this and ended up leaving it the way it was because I didn’t know how to fix it. The solution wasn’t found till my next project, Clutch.
+                    <br><br>
+
+                    <img src="_ui/assets/_rockbox/alignment_issue.jpg" alt="" />
+
+                    Lastly, I learned a lot more about illustrator. Since the fulcrum site already came with a design for mobile and desktop, I didn’t have to do much except save images. With Rock Box, I learned more about the differences between the types of image files you can use, svg vs jpg vs gifs and saving for web. I also learned how to use an artboard and how to save the images piece by piece using an artboard so the canvas size is still the same. I really like using illustrator now and even used it to create the design layout for my portfolio.
+
+
+                </p>
+            </div>
+
+        </section>
         <footer>
             <div class="container">
                 <p>
@@ -214,15 +183,6 @@
             </div>
         </footer>
 
-
-        <!--build:js js/main.min.js -->
-        <script src="_ui/js/jquery-3.0.0.min.js"></script>
-        <script src="_ui/js/scrolling.js"></script>
-        <script src="_ui/js/menu.js"></script>
-        <script src="_ui/js/smoothScroll.js"></script>
-        <script src="_ui/js/faded.js"></script>
-        <script src="_ui/js/submitPHP.js"></script>
-        <!-- <script src="_ui/js/page.js"></script> -->
-        <!-- endbuild -->
+        <script src="js/main.min.js"></script>
     </body>
 </html>

@@ -2,17 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Heidi Yee</title>
+        <title>Nudge|Heidi Yee</title>
 
-        <!--build:css css/styles.min.css-->
-        <link rel="stylesheet" href="_ui/css/main.css">
-        <!--endbuild-->
+        <link rel="stylesheet" href="css/styles.min.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis:500,700|Karla|Sniglet" rel="stylesheet">
     </head>
     <body>
-        <h1 class="offscreen">Heidi Yee's Website</h1>
-        <nav class="nav-bar">
+        <nav class="nav-bar-summary sticky">
             <div class="container">
                 <a href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -111,101 +107,61 @@
 
 
                 <div id="nav-icon">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
+                    <span class="line gray"></span>
                 </div>
-
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><!-- hello--></li>
+                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main role="main">
-            <section class="hero">
-                <div class="parallax slide-1">
-                    <div class="container">
-                        <p>
-                            Hi, my name is Heidi<br>
-                            I'm a front end developer
-                            based in seattle
-                        </p>
-                    </div>
+        <div class="filler"></div>
+        <header class="nudge">
+            <div class="parallax">
 
-                </div>
+            </div>
+        </header>
 
-            </section>
-            <section id="portfolio" class="portfolio">
-                <h2>Portfolio</h2>
-                <div class="container">
-                    <a class="faded details" href="nudge.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_nudge/nudge.jpg" alt="Nudge project" />
-                            <figcaption>
-                                Nudge
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="fulcrum.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_fulcrum/fulcrum.jpg" alt="Fulcrum project" />
-                            <figcaption>
-                                Fulcrum
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="rockbox.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" />
-                            <figcaption>
-                                Rock Box
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="clutch.html">
-                        <figure class="dog-ear">
-                            <img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" />
-                            <figcaption>
-                                Clutch
-                            </figcaption>
-                        </figure>
-                    </a>
+        <section class="summary">
+            <div class="container">
+                <h1>Nudge</h1>
 
-                </div>
+                <p class="font-gray">
+                    based on StudioNudge.com
+                </p>
+                <ul class="subtitle">
+                    <li>html</li>
+                    <li>css</li>
+                </ul>
+                <p>
+                    Nudge was my first website I made from scratch with good ole html and css. When I first started looking for websites to make, I had just finished the html/css module in Treehouse and CodeCademy. I felt like I was ready to take on a huge website, but quickly discovered that a lot of websites were using javascript for user interactions. I felt like I needed an easy starter project that still had a sleek design. Nudge met all my needs and I had a lot of fun making it. <br><br>
 
-            </section>
+                    There are a couple pages I left out on purpose. I didn’t want to copy everything from the website and the main focus was to prove to myself that I could make a website from scratch using self taught methods. I picked the pages that I thought were most challenging and left the rest alone. I think once I was done with the pages I did make, I was ready to move on to learning javascript.
+                </p>
+                <a class="faded" href="http://theheidiyee.com/Nudge/" target="_blank" >Check it out</a>
+                <!-- <div class="parallax slide-1">
 
-            <section id="about" class="about">
-                <h2 class="faded">About</h2>
-                <div class="container faded">
+                </div> -->
+                <!-- <img src="_ui/assets/_nudge/nudge_responsive.jpg" alt="" /> -->
 
-                    <p >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <img src="_ui/assets/scuba_yee.jpg" alt="" />
+                <h2 class="faded">Lessons Learned</h2>
+                <ul class="subtitle">
+                    <li>responsive</li>
+                    <li>css properties</li>
+                    <li>psuedo-elements</li>
+                </ul>
+                <p class="faded">
+                    I learned a great amount from this first site. One of the biggest lessons I learned about was responsive web design. I ended up reading a book on it, called “BLAH BLAH BLAH”. It explained how important response web design is and how to use it properly. Once you notice something like that, you don’t stop noticing it. These days, I pay extra attention to how responsive websites are.<br><br>
 
-                </div>
+                    Since I was fairly new to css, I also googled a ton of different css properties and learned about browser support. One of the biggest problems I had on this project was vertical text. Since there’s always multiple ways to do something, I wasn’t sure which method was better. I eventually found a method I liked for the vertical text, but I didn’t know exactly how different an element could look in different browsers. This came later after building a couple more projects.
+                </p>
+            </div>
 
-            </section>
-            <section id="contact" class="contact">
-                <h2 class="faded">Contact</h2>
-                <div class="container faded">
-                    <p id="result">
-                        How's it going?
-                    </p>
-                    <form class="form" method="post">
-                        <input type="text" name="name" id="name" placeholder="NAME *" required>
-                        <input type="email" name="email" id="email" placeholder="EMAIL *" required>
-                        <textarea name="message" id="message" rows="8" placeholder="MESSAGE *" required></textarea>
-                        <input id="submit" class="submit" type="submit" value="Submit">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-
+        </section>
         <footer>
             <div class="container">
                 <p>
@@ -214,15 +170,6 @@
             </div>
         </footer>
 
-
-        <!--build:js js/main.min.js -->
-        <script src="_ui/js/jquery-3.0.0.min.js"></script>
-        <script src="_ui/js/scrolling.js"></script>
-        <script src="_ui/js/menu.js"></script>
-        <script src="_ui/js/smoothScroll.js"></script>
-        <script src="_ui/js/faded.js"></script>
-        <script src="_ui/js/submitPHP.js"></script>
-        <!-- <script src="_ui/js/page.js"></script> -->
-        <!-- endbuild -->
+        <script src="js/main.min.js"></script>
     </body>
 </html>

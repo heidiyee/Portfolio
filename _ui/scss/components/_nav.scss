@@ -27,6 +27,12 @@
                 fill: $white;
 
                 transition: fill 0.5s ease;
+
+                &.gray {
+                    fill: $gray;
+
+                    transition: fill 0.5s ease;
+                }
             }
         }
 
@@ -34,13 +40,12 @@
             display: inline-block;
             position: absolute;
             right: 2em;
-            top: 0.7em;
-            width: 3.0em;
-            height: 69px;
+            top: 3em;
+            width: 2.5em;
+            height: 30px;
             cursor: pointer;
             z-index: 20;
 
-            transition: margin-right .5s;
             transform: rotate(0deg);
 
             .line {
@@ -48,51 +53,56 @@
                 position: absolute;
                 left: 0;
                 width: 100%;
-                height: 5px;
+                height: 3px;
                 background: $white;
 
                 border-radius: 2em;
                 transform: rotate(0deg);
-                transition: all .25s ease-in-out;
+                transition: top .2s ease-in-out 0.2s,transform 0.2s ease-in-out, background 0.2s linear, visibility 0.1s ease 0.2s;
 
                 &:nth-child(1) {
-                    top: 26px;
-                }
-
-                &:nth-child(2), &:nth-child(3) {
-                    top: 36px;
-                }
-
-                &:nth-child(4) {
-                    top: 46px;
-                }
-            }
-        }
-
-        #nav-icon.open {
-
-            .line {
-                &:nth-child(1) {
-                    top: 36px;
-                    width: 0%;
-                    left: 50%;
+                    top: 5px;
                 }
 
                 &:nth-child(2) {
-                    transform: rotate(45deg);
+                    top: 13px;
+                    visibility: visible;
                 }
 
                 &:nth-child(3) {
-                    transform: rotate(-45deg);
+                    top: 21px;
                 }
 
-                &:nth-child(4) {
-                    top: 36px;
-                    width: 0%;
-                    left: 50%;
+                &.gray {
+                    background: $gray;
+                }
+            }
+
+            &.open {
+
+                .line {
+
+                    transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s, visibility 0.2s ease 0.1s;
+
+                    &:nth-child(1) {
+                        top: 13px;
+                        transform: rotate(45deg);
+
+                    }
+
+                    &:nth-child(2) {
+                        visibility: hidden;
+                    }
+
+                    &:nth-child(3) {
+                        top: 13px;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }
+
+
 
         #nav-links {
             position: absolute;
@@ -103,7 +113,7 @@
             height: 100vh;
             overflow: hidden;
             z-index: 3;
-            transition: .25s ease-in-out;
+            transition: .3s ease-in-out;
 
             ul {
                 padding: 10em 0 2em;
@@ -125,50 +135,29 @@
                     }
                 }
             }
-        }
+            &.popup {
+                width: 100%;
+                position: fixed;
+                left: 0;
+                z-index: 6;
 
-        #nav-links.popup {
-            width: 100%;
-            position: fixed;
-            left: 0;
-            z-index: 6;
-
-            transition: all .25s ease-in-out;
-        }
-    }
-
-}
-
-//sticky nav bar when not at the top of the page
-.nav-bar.sticky {
-    background-color: $white;
-    box-shadow: 1px 1px 1px #ccc;
-
-    transition: background-color 0.5s ease, height 0.25s linear;
-
-    .container {
-        svg {
-            .st0.gray {
-                fill: $gray;
-
-                transition: fill 0.5s ease;
-            }
-        }
-
-        #nav-icon {
-            .line.gray {
-                background: $gray;
-
-                transition: background 0.25s ease;
-
+                transition: all .25s ease-in-out;
             }
         }
     }
-}
 
-.nav-bar.hide {
-    height: 0;
-    overflow: hidden;
+    //sticky nav bar when not at the top of the page
+    &.sticky {
+        background-color: $white;
+        box-shadow: 1px 1px 1px #ccc;
+
+        transition: background-color 0.5s ease, height 0.25s linear;
+    }
+
+    &.hide {
+        height: 0;
+        overflow: hidden;
+    }
 }
 
 .nav-bar-summary {
