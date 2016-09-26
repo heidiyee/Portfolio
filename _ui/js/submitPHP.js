@@ -12,8 +12,6 @@ var submit = function() {
     var message = $("#message");
     var messageVal = message.val();
 
-    console.log("hello" + nameVal + emailVal + messageVal);
-
     name.on('input', function() {
         name.removeClass('red');
         nameVal = name.val();
@@ -36,17 +34,19 @@ var submit = function() {
 
         // var dataString = 'name' + name + 'email' + email;
         if (nameVal == '' || emailVal == '' || messageVal == '' || emailValid == false) {
+            $("#result").hide().html("Please fill out all three fields. ").fadeIn(500);
             if (nameVal == "") {
-                console.log(nameVal);
                 name.addClass('red');
             }
-            if (emailVal == "" || emailValid == false) {
-                console.log(emailVal);
-                email.addClass('red');
-            }
             if (messageVal == "" ) {
-                console.log(messageVal);
                 message.addClass('red');
+            }
+            if (emailVal == "" || emailValid == false) {
+                email.addClass('red');
+
+                if (emailVal !== "" && emailValid == false) {
+                    $('#result').append("<br>You must enter a valid email.").fadeIn(500);
+                }
             }
 
         } else {
@@ -65,7 +65,6 @@ var submit = function() {
                 }
             });
         }
-        $("#result").html("Please fill out all three fields");
         return false;
     });
 };

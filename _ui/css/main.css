@@ -49,6 +49,57 @@ html {
     .to-the-right:last-child {
       margin-right: 0; } }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url(../fonts/icons/icomoon.eot?i2sy59);
+  src: url(../fonts/icons/icomoon.eot?i2sy59#iefix) format("embedded-opentype"), url(../fonts/icons/icomoon.ttf?i2sy59) format("truetype"), url(../fonts/icons/icomoon.woff?i2sy59) format("woff"), url(../fonts/icomoon.svg?i2sy59#icomoon) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-icon-github:before {
+  content: "\e900"; }
+
+.icon-icon-linkedin:before {
+  content: "\e901"; }
+
+.icon-icon-right-arrow .path1:before {
+  content: "\e902";
+  color: #dd2626; }
+
+.icon-icon-right-arrow .path2:before {
+  content: "\e903";
+  margin-left: -1.806640625em;
+  color: black; }
+
+.icon-icon-right-arrow .path3:before {
+  content: "\e904";
+  margin-left: -1.806640625em;
+  color: #dd2626; }
+
+.icon-icon-right-arrow .path4:before {
+  content: "\e905";
+  margin-left: -1.806640625em;
+  color: black; }
+
+.icon-icon-up:before {
+  content: "\e906"; }
+
+.icon-icon-right-arrow-thin:before {
+  content: "\e907"; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -515,8 +566,15 @@ header.clutch .parallax {
 .contact .container {
   padding-bottom: 20em; }
   .contact .container #result {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
     padding-bottom: 2em;
     font-size: 1.8em; }
+    .contact .container #result:last-child {
+      margin-right: 0; }
   .contact .container .form {
     float: left;
     display: block;
@@ -578,16 +636,41 @@ footer {
   height: 0;
   -webkit-box-shadow: 0px 0px 5px #ccc;
   box-shadow: 0px 0px 5px #ccc;
-  -webkit-transition: padding 0.25s ease;
-  transition: padding 0.25s ease; }
-  footer .container p {
-    text-align: center; }
+  -webkit-transition: padding 0.2s ease;
+  transition: padding 0.2s ease; }
+  footer .container {
+    position: relative; }
+    footer .container .smooth {
+      background-color: #fff;
+      overflow: hidden;
+      position: absolute;
+      display: inline-block;
+      width: 80px;
+      height: 0;
+      bottom: 59px;
+      padding-top: 0;
+      left: -webkit-calc((100% - 80px)/2);
+      left: calc((100% - 80px)/2);
+      font-size: 1.6em;
+      text-align: center;
+      border-radius: 20em 20em 0 0;
+      -webkit-box-shadow: 0px -2px 2px #ccc;
+      box-shadow: 0px -2px 2px #ccc;
+      -webkit-transition: padding 0.05s ease, height 0.05s ease;
+      transition: padding 0.05s ease, height 0.05s ease; }
+    footer .container p {
+      text-align: center; }
 
 footer.appear {
   height: auto;
   padding: 4em 0 6em;
-  -webkit-transition: padding 0.25s ease;
-  transition: padding 0.25s ease; }
+  -webkit-transition: padding 0.2s ease;
+  transition: padding 0.2s ease; }
+  footer.appear .container .smooth {
+    height: 40px;
+    padding-top: 20px;
+    -webkit-transition: padding 0.05s ease, height 0.05s ease;
+    transition: padding 0.05s ease, height 0.05s ease; }
 
 .summary {
   text-align: left;

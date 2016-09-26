@@ -3,6 +3,8 @@
         padding-bottom: 20em;
 
         #result {
+            @include span-columns(10);
+            @include shift(1);
             padding-bottom: 2em;
             font-size: 1.8em;
         }
