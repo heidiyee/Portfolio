@@ -1,5 +1,5 @@
 .about {
-    background-color: #f6f7f7;
+    background-color: $bg-color;
     padding-bottom: 8em;
 
     .container {
@@ -12,12 +12,8 @@
             @include shift(1);
 
             margin-top: 3em;
-
-            border-radius: 2em;
         }
-
     }
-
 }
 
 @media only screen and (min-width: 750px) {

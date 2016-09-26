@@ -102,8 +102,6 @@
             }
         }
 
-
-
         #nav-links {
             position: absolute;
             background-color: $white;
@@ -113,7 +111,7 @@
             height: 100vh;
             overflow: hidden;
             z-index: 3;
-            transition: .3s ease-in-out;
+            transition: width .25s ease-in-out, left 0.25s ease-in-out;
 
             ul {
                 padding: 10em 0 2em;
@@ -123,15 +121,18 @@
                     text-align: center;
                     position: relative;
 
+
                     a {
                         display: block;
-                        font-size: 1em;
                         padding: 1em 0;
-                        border: none;
-                    }
+                        font-size: 1em;
+                        color: $pink;
 
-                    &:hover, &:focus {
-                        background-color: #fff;
+                        border: none;
+
+                        // &:hover, &:focus {
+                        //     border-bottom: 2px solid $pink;
+                        // }
                     }
                 }
             }
@@ -141,7 +142,7 @@
                 left: 0;
                 z-index: 6;
 
-                transition: all .25s ease-in-out;
+                transition: width .25s ease-in-out, left 0.25s ease-in-out;
             }
         }
     }
@@ -157,16 +158,88 @@
     &.hide {
         height: 0;
         overflow: hidden;
+
+        transition: overflow 0.25s linear, height 0.25s linear;
+
     }
 }
 
-.nav-bar-summary {
+@media only screen and (min-width: 750px) {
+    .nav-bar {
+
+        .container {
+            #nav-icon {
+                display: none;
+            }
+
+            #nav-links {
+                background-color: transparent;
+                width: 100%;
+                height: auto;
+                top: 20px;
+                right: 0;
+                left: auto;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        float: right;
+                        display: inline-block;
+                        padding: 0 20px;
+
+                        a {
+                            font-weight: bold;
+                            color: $white;
+
+                            &.gray {
+                                color: $gray;
+                            }
+
+                            &:hover {
+                                color: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//nav bar for individual project page. Since scrolling.js selects nav bar using class nav-bar, I changed the class for individual pages to nav bar project.
+.nav-bar-project {
     @extend .nav-bar;
 
     .container {
         svg {
             .st0 {
                 fill: $gray;
+            }
+        }
+
+        #nav-links {
+            width: 100%;
+            height: auto;
+            top: 20px;
+            right: 20px;
+            left: auto;
+
+            ul {
+                padding: 0;
+
+                li {
+                    float: right;
+                    display: inline-block;
+
+                    a {
+                        color: $gray;
+
+                        &:hover {
+                            color: $pink;
+                        }
+                    }
+                }
             }
         }
     }

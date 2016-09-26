@@ -1,5 +1,5 @@
 var smoothScroll = function() {
-    $('a[href*="#"]:not([href="#"])').on('click', function (event) {
+    $('.smooth').on('click', function (event) {
         event.preventDefault();
 
         var upTop;

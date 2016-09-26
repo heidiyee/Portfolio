@@ -1,7 +1,6 @@
 .summary {
     text-align: left;
-
-    padding-bottom: 20em;
+    padding-bottom: 40px;
 
     .container {
         padding: 0 20px;
@@ -14,17 +13,11 @@
             }
         }
 
-        .parallax.slide-1 {
-            background-image: url(../assets/_nudge/nudge_responsive.jpg);
-        }
-
         a {
-            display: block;
             padding-top: 2em;
 
             font-size: 1.8em;
-            text-align: center;
-
+            color: $pink;
         }
 
         img {
@@ -46,7 +39,37 @@
                 border-radius: 20em;
             }
         }
+
+        &.extra-bottom-padding {
+            padding-bottom: 15em;
+        }
+
+        .parallax.slide-1 {
+            background-image: url(../assets/_nudge/nudge_responsive.jpg);
+        }
     }
 
+    //background color for lessons learned section
+    &.bg {
+        background-color: $bg-color;
+    }
+}
 
+@media only screen and (min-width: 750px) {
+    .summary {
+        padding: 30px 0 60px;
+        text-align: left;
+
+        .container.extra-bottom-padding {
+            padding-bottom: 15em;
+        }
+
+        .container {
+            padding: 0 20px;
+
+            h2 {
+                padding-top: 30px;
+            }
+        }
+    }
 }

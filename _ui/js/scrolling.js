@@ -16,7 +16,6 @@ var footer = $("footer"),
     main = $("main");
 
 
-
 $(window).scroll(function(){
     scrollTop = $(this).scrollTop();
 
@@ -30,10 +29,14 @@ $(window).scroll(function(){
         navBar.addClass('sticky');
         $(".st0").addClass('gray');
         $(".line").addClass('gray');
+        $('#nav-links a').addClass('gray');
+
+
     } else {
         navBar.removeClass('sticky');
         $(".st0").removeClass('gray');
         $(".line").removeClass('gray');
+        $('#nav-links a').removeClass('gray');
     }
 
     //hide nav-bar
