@@ -1,31 +1,99 @@
 header.nudge {
     .parallax {
         background-image: url(../assets/_nudge/nudge.jpg);
-        background-size: 200% auto;
-        background-position: top 8em center;
+        background-size: auto 300px;
+        background-position: top 80px center;
     }
 }
 
 header.fulcrum {
     .parallax {
         background-image: url(../assets/_fulcrum/fulcrum_large.jpg);
-        background-size: 200% auto;
-        background-position: top 8em center;
+        background-size: auto 400px;
+        background-position: top 80px center;
     }
 }
 
 header.rockbox {
     .parallax {
         background-image: url(../assets/_rockbox/rockbox.jpg);
-        background-size: 135% auto;
-        background-position: top 8em center;
+        background-size: auto 300px;
+        background-position: top 80px center;
     }
 }
 
 header.clutch {
     .parallax {
         background-image: url(../assets/_clutch/clutch.jpg);
-        background-size: 152% auto;
-        background-position: top 8em right;
+        background-size: auto 400px;
+        background-position: top 60px center;
+    }
+}
+
+@media only screen and (min-width: 530px) {
+    header.nudge {
+        .parallax {
+            background-size: auto 400px;
+            background-position: top 30px center;
+        }
+    }
+
+    header.fulcrum {
+        .parallax {
+            background-size: auto 500px;
+            background-position: top 80px center;
+        }
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    header.rockbox {
+        .parallax {
+            background-image: url(../assets/_rockbox/rockbox.jpg);
+            background-size: auto 400px;
+            background-position: top 30px center;
+        }
+    }
+
+    header.clutch {
+        .parallax {
+            background-image: url(../assets/_clutch/clutch.jpg);
+            background-size: auto 500px;
+            background-position: top 30px center;
+        }
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    header.nudge {
+        .parallax {
+            background-color: $bg-color;
+            background-size: 960px auto;
+            background-position: top -15px center;
+        }
+    }
+
+    header.fulcrum {
+        .parallax {
+            background-color: $bg-color;
+            background-size: 960px auto;
+            background-position: top 30px center;
+        }
+    }
+
+    header.rockbox {
+        .parallax {
+            background-color: $bg-color;
+            background-size: 960px auto;
+            background-position: top 20px center;
+        }
+    }
+
+    header.clutch {
+        .parallax {
+            background-color: $bg-color;
+            background-size: 960px auto;
+            background-position: top center;
+        }
     }
 }

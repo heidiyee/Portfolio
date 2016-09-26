@@ -17,14 +17,16 @@
             padding-top: 2em;
 
             font-size: 1.8em;
+            font-weight: bold;
             color: $pink;
         }
 
         img {
+            display: block;
             // border: 2px solid #000;
             padding: 2em 0;
-
             max-width: 100%;
+            margin: 0 auto;
         }
 
         ul {
@@ -44,9 +46,6 @@
             padding-bottom: 15em;
         }
 
-        .parallax.slide-1 {
-            background-image: url(../assets/_nudge/nudge_responsive.jpg);
-        }
     }
 
     //background color for lessons learned section

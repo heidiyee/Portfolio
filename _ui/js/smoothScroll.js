@@ -6,6 +6,8 @@ var smoothScroll = function() {
         var target = $(this.getAttribute('href'));
         var t = $(window).scrollTop();
 
+        console.log(target);
+
         if (target.length) {
             $('body').css("overflow", "auto");
             $("#nav-icon").removeClass("open");
@@ -19,6 +21,10 @@ var smoothScroll = function() {
 
             $('html, body').stop().animate({
                 scrollTop: upTop
+            }, 700);
+        } else {
+            $('html, body').stop().animate({
+                scrollTop: 0
             }, 700);
         }
     });

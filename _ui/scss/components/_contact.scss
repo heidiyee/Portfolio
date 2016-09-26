@@ -4,11 +4,16 @@
 
         #result {
             padding-bottom: 2em;
+            font-size: 1.8em;
         }
 
         .form {
             @include span-columns(10);
             @include shift(1);
+
+            input, textarea, .submit {
+                font-size: 1.4em;
+            }
 
             input, textarea {
                 display: block;
@@ -34,7 +39,6 @@
             .submit {
                 background-color: $pink;
                 width: 40%;
-                font-size: 1.2em;
             }
         }
     }
