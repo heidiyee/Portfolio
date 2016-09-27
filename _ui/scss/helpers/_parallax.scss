@@ -1,0 +1,14 @@
+.parallax {
+    // background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 300px;
+}
+
+.parallax-base {
+    position: relative;
+    background-color: $white;
+    z-index: 2;
+}

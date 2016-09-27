@@ -1,0 +1,19 @@
+@keyframes around-town {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes other-way {
+    from {
+        transform: rotate(359deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}

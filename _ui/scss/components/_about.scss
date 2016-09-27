@@ -4,7 +4,11 @@
 
     .container {
         p {
-            padding: 0 40px;
+            @include span-columns(10);
+            @include shift(1);
+
+            text-align: left;
+
         }
 
         img {
@@ -30,7 +34,6 @@
             p {
                 float: right;
                 @include omega();
-                text-align: left;
             }
 
             img {

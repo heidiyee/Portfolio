@@ -24,6 +24,10 @@ $(window).scroll(function(){
         hero.css("opacity", 1 - scrollTop / 250);
     }
 
+    if ($('header').length) {
+        $('.parallax').css('top', scrollTop/3);
+    }
+
     // stick the nav bar up at the top momentarily
     if (scrollTop > 100) {
         navBar.addClass('sticky');

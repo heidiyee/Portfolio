@@ -1,8 +1,16 @@
+header {
+    .parallax {
+        position: relative;
+        background-position: top center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
 header.nudge {
     .parallax {
         background-image: url(../assets/_nudge/nudge.jpg);
         background-size: auto 300px;
-        background-position: top 80px center;
     }
 }
 
@@ -17,13 +25,14 @@ header.fulcrum {
 header.rockbox {
     .parallax {
         background-image: url(../assets/_rockbox/rockbox.jpg);
-        background-size: auto 300px;
-        background-position: top 80px center;
+        background-size: auto 300px; 
     }
 }
 
 header.clutch {
     .parallax {
+        position: relative;
+
         background-image: url(../assets/_clutch/clutch.jpg);
         background-size: auto 400px;
         background-position: top 60px center;

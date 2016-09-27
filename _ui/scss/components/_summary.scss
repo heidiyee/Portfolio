@@ -19,6 +19,34 @@
             font-size: 1.8em;
             font-weight: bold;
             color: $pink;
+
+            &.website {
+                &::after {
+                    content: "\e902";
+                    font-family: 'icomoon' !important;
+                    speak: none;
+                    font-size: 0.6em;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+
+                    padding-left: 8px;
+
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+
+                    transition: padding 0.2s linear;
+                }
+
+                &:hover::after {
+                    padding-left: 14px;
+
+                    transition: padding 0.2s linear;
+                }
+            }
         }
 
         img {
@@ -30,7 +58,7 @@
         }
 
         ul {
-            padding: 2em 0;
+            padding: 2em 0 3em;
 
             li {
                 display: inline-block;
@@ -43,7 +71,7 @@
         }
 
         &.extra-bottom-padding {
-            padding-bottom: 15em;
+            padding-bottom: 20em;
         }
 
     }
@@ -58,10 +86,6 @@
     .summary {
         padding: 30px 0 60px;
         text-align: left;
-
-        .container.extra-bottom-padding {
-            padding-bottom: 15em;
-        }
 
         .container {
             padding: 0 20px;
