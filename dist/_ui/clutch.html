@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis:500,700|Karla|Sniglet" rel="stylesheet">
     </head>
     <body>
-        <nav class="nav-bar-summary sticky">
+        <nav class="nav-bar-project sticky">
             <div class="container">
                 <a href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -104,17 +104,9 @@
                     </g>
                     </svg>
                 </a>
-
-
-                <div id="nav-icon">
-                        <span class="line gray"></span>
-                        <span class="line gray"></span>
-                        <span class="line gray"></span>
-                        <span class="line gray"></span>
-                </div>
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
+                        <li><a href="/#portfolio">More Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -126,64 +118,77 @@
             </div>
         </header>
 
-        <section class="summary">
-            <div class="container">
-                <h1>Clutch</h1>
+        <div class="parallax-base">
+            <section class="summary">
+                <div class="container">
+                    <div class="headings subtitle">
+                        <h1>Clutch</h1>
 
-                <p class="font-gray">
-                    based on design from Turnstyle
-                </p>
-                <ul class="subtitle">
-                    <li>html</li>
-                    <li>sass</li>
-                    <li>jQuery</li>
-                    <li>gulp</li>
-                    <li>neat</li>
-                </ul>
-                <p>
-                    Clutch was a really fun project to work on and I think it’s my best website I’ve made so far. The website was very well designed and each page came with a mobile and desktop layout. This gave me a good starting point so all I had to do was focus on the code. There were a couple challenges along the way, including working with more complicated CSS3 transitions and learning how to test for browser support. In all, everything went well with this website and I’m very happy with the result.
+                        <p class="font-gray">
+                            based on design from Turnstyle
+                        </p>
+                        <ul>
+                            <li>html</li>
+                            <li>sass</li>
+                            <li>jQuery</li>
+                            <li>gulp</li>
+                            <li>neat</li>
+                        </ul>
+                        <a class="website" href="http://theheidiyee.com/Clutch/" target="_blank">Check it out</a>
+                    </div>
+                    <div class="to-the-right">
+                        <p>
+                            Clutch was a really fun project to work on and I think it’s my best website I’ve made so far. The website was very well designed and each page came with a mobile and desktop layout. This gave me a good starting point so all I had to do was focus on the code. There were a couple challenges along the way, including working with more complicated CSS3 transitions and learning how to test for browser support. In all, everything went well with this website and I’m very happy with the result.
 
-                </p>
-                <a class="faded" href="http://theheidiyee.com/Clutch/" target="_blank">Check it out</a>
-                <!-- <div class="parallax slide-1">
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="summary bg faded">
+                <div class="container extra-bottom-padding">
+                    <div class="headings">
+                        <h2 class="faded">Lessons Learned</h2>
+                        <ul class="subtitle">
+                            <li>grid system</li>
+                            <li>ie</li>
+                            <li>virtualbox</li>
+                            <li>polyfill/shims</li>
+                        </ul>
+                    </div>
+                    <div class="to-the-right">
+                        <p class="faded">
+                            Before I started on the Clutch project, I wanted to make sure I understood what I could have done with the design layout of the Rock Box site. I was still a bit frustrated with the alignment issues and decided to ask my boyfriend about it, who is also a front-end developer. I try not to ask him too many questions, but this was one I couldn’t shake. He told me there was a thing called grid systems and I should look up one to use for the site. I spent some time googling and came across a framework called Neat by ThoughtBot. I decided to give it a shot since it was well documented and easy to incorporate into my gulp file.<br><br>
 
-                </div> -->
+                            Thank goodness for the grid system. Neat was very easy to understand and saved me so much time positioning elements. I used to use calc() for everything, but now, I just use the grid system. I’m pretty sure I’m not using it to its full capabilities and I still don’t know if Neat is the best framework out there since I still need to include bourbon in my projects, which I don’t use at all. However, the grid system really changed how the site turned out and I’m really happy I ended up using it on this project. <br><br>
 
+                            The next lesson learned I’m not exactly excited to write about. The lesson learned was about browser testing, specifically browser testing for Internet Explorer. <br><br>
 
-                <h2 class="faded">Lessons Learned</h2>
-                <ul class="subtitle">
-                    <li>grid system</li>
-                    <li>ie</li>
-                    <li>virtualbox</li>
-                    <li>polyfill/shims</li>
-                </ul>
-                <p class="faded">
-                    Before I started on the Clutch project, I wanted to make sure I understood what I could have done with the design layout of the Rock Box site. I was still a bit frustrated with the alignment issues and decided to ask my boyfriend about it, who is also a front-end developer. I try not to ask him too many questions, but this was one I couldn’t shake. He told me there was a thing called grid systems and I should look up one to use for the site. I spent some time googling and came across a framework called Neat by ThoughtBot. I decided to give it a shot since it was well documented and easy to incorporate into my gulp file.<br><br>
+                            Omg, what a pain. <br><br>
 
-                    Thank goodness for the grid system. Neat was very easy to understand and saved me so much time positioning elements. I used to use calc() for everything, but now, I just use the grid system. I’m pretty sure I’m not using it to its full capabilities and I still don’t know if Neat is the best framework out there since I still need to include bourbon in my projects, which I don’t use at all. However, the grid system really changed how the site turned out and I’m really happy I ended up using it on this project. <br><br>
+                            Of course, I knew this day would come. I knew I would need to test all the projects I had done in different browsers besides Chrome before making them public to the world, but I wasn't sure where to start. Luckily for me, front end developers have dealt with this for years, so I didn’t have trouble finding out how to run IE on my mac. I use VirtualBox since it’s free and downloaded IE9 - IE Edge from the microsoft site. Oh goodie, now I can use IE if I wanted to…<br><br>
 
-                    The next lesson learned I’m not exactly excited to write about. The lesson learned was about browser testing, specifically browser testing for Internet Explorer. <br><br>
+                            Anyway, the sites came out looking terrible, but I quickly learned about polyfills and shims. I used a polyfill called placeholder.js if anyone is interested. It works really well for placeholders in forms. Once I was done with the Clutch site, I made sure to check all the other projects I had done. I also made sure to test in Firefox and Safari, which pretty much worked the same as Chrome.<br><br>
 
-                    Omg, wtf. <br><br>
-
-                    Of course, I knew this day would come. I knew I would need to test all the projects I had done in different browsers besides Chrome before making them public to the world, but I kept putting it off. Luckily for me, front end developers have had to deal with this for years, so I didn’t have trouble finding out how to run IE on my mac. I use VirtualBox since it’s free and downloaded IE8 - IE11 from the microsoft site. Oh goodie, now I can use IE if I wanted to…<br><br>
-
-                    Anyway, the sites came out looking terrible, but I quickly learned about polyfills and shims. I used a polyfill called placeholder.js if anyone is interested. It works really well for placeholders in forms. Once I was done with the Clutch site, I made sure to check all the other projects I had done. I also made sure to test in Firefox and Safari, which weren’t bad at all.<br><br>
-
-                    Also, just in case you liked the “magic line” effect on the Clutch site, here is the tutorial I used that is css only. I did use jQuery to hide the line if you’re hovering the nav links, but I found this tutorial to be really straight forward and easy to implement.
-
-
-                </p>
-            </div>
-
-        </section>
+                            Also, just in case you liked the “magic line” effect on the Clutch site, here is the tutorial I used that is css only. I did use jQuery to hide the line if you’re hovering the nav links, but I found this tutorial to be really straight forward and easy to implement.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <footer>
             <div class="container">
+                <a class="smooth icon-up-chevron" href="top"></a>
+                <p class="icons">
+                    <a class="icon icon-linkedin" href="https://www.linkedin.com/in/heidiyee" target="_blank"></a>
+                    <a class="icon icon-github" href="https://github.com/heidiyee" target="_blank"></a>
+                </p>
                 <p>
                     &copy; Made by Heidi Yee - Developer 2016
                 </p>
             </div>
         </footer>
+
 
         <script src="js/main.min.js"></script>
     </body>

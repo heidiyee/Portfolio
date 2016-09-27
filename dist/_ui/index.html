@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Heidi Yee</title>
 
         <link rel="stylesheet" href="css/styles.min.css">
@@ -106,35 +106,33 @@
                     </g>
                     </svg>
                 </a>
-
-
                 <div id="nav-icon">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-                
+
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><!-- hello--></li>
+                        <li><a class="smooth" href="#portfolio">Portfolio</a></li><li><a class="smooth" href="#about">About</a></li><li><a class="smooth" href="#contact">Contact</a></li><li><!-- hello--></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main role="main">
-            <section class="hero">
-                <div class="parallax slide-1">
-                    <div class="container">
-                        <p>
-                            Hi, my name is Heidi<br>
-                            I'm a front end developer
-                            based in seattle
-                        </p>
-                    </div>
-
+        <section class="hero">
+            <div class="parallax">
+                <div class="container">
+                    <p>
+                        Hi, my name is Heidi<br>
+                        I'm a front end developer
+                        based in Seattle
+                    </p>
                 </div>
 
-            </section>
+            </div>
+        </section>
+        <div class="parallax-base">
+
             <section id="portfolio" class="portfolio">
                 <h2>Portfolio</h2>
                 <div class="container">
@@ -156,7 +154,7 @@
                     </a>
                     <a class="faded details" href="rockbox.html">
                         <figure>
-                            <img src="_ui/assets/_rockbox/rockbox.jpg" alt="RockBox project" />
+                            <img src="_ui/assets/_rockbox/rockbox_smaller.jpg" alt="RockBox project" />
                             <figcaption>
                                 Rock Box
                             </figcaption>
@@ -170,9 +168,7 @@
                             </figcaption>
                         </figure>
                     </a>
-
                 </div>
-
             </section>
 
             <section id="about" class="about">
@@ -180,9 +176,13 @@
                 <div class="container faded">
 
                     <p >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        Hi there, my name is Heidi, but you probably know that by now. 😅<br><br>
+                        I started coding about a year ago. I first learned about iOS development - swift, objective c, OOP - but once I started working on my portfolio site, I started to lean more towards front-end development. I really like front end development because I feel like there's less limitations, although I find coding in general to be fun and rewarding.<br><br>
+
+                        Before that, I was an industrial engineer for three years, but quit my job after realizing that becoming a developer was what I wanted to do. I think it's one of the craziest things I've ever done, but I don't regret it one bit. <br><br>
+                        My current job is watching my dog and coding on the couch. Although it's a very fun job, I'm still looking for a developer gig, so please feel free to contact me if you know of any opportunites out there. <br><br>You can also contact me about scuba diving, hiking or dogs. I love all the above. 🐶🐳🗻
                     </p>
-                    <img src="_ui/assets/scuba_yee.jpg" alt="" />
+                    <img class="faded" src="_ui/assets/scuba_yee.jpg" alt="" />
 
                 </div>
 
@@ -191,7 +191,7 @@
                 <h2 class="faded">Contact</h2>
                 <div class="container faded">
                     <p id="result">
-                        How's it going?
+                        Send me a message and I'll get back to you soon
                     </p>
                     <form class="form" method="post">
                         <input type="text" name="name" id="name" placeholder="NAME *" required>
@@ -201,11 +201,16 @@
                     </form>
                 </div>
             </section>
-        </main>
 
+        </div>
 
         <footer>
             <div class="container">
+                <a class="smooth icon-up-chevron" href="top"></a>
+                <p class="icons">
+                    <a class="icon icon-linkedin" href="https://www.linkedin.com/in/heidiyee" target="_blank"></a>
+                    <a class="icon icon-github" href="https://github.com/heidiyee" target="_blank"></a>
+                </p>
                 <p>
                     &copy; Made by Heidi Yee - Developer 2016
                 </p>

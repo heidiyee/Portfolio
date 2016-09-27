@@ -1,10 +1,11 @@
 .parallax {
-    // background-attachment: fixed;
+    position: relative;
     background-size: contain;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
 
     height: 300px;
+    z-index: -1;
 }
 
 .parallax-base {

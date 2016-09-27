@@ -12,8 +12,7 @@ var scrollTop,
 
 //showing footer at the very end
 var footer = $("footer"),
-    footerHeight = footer.outerHeight(),
-    main = $("main");
+    footerHeight = footer.outerHeight();
 
 
 $(window).scroll(function(){
@@ -21,12 +20,11 @@ $(window).scroll(function(){
 
     // fade in and out hero text
     if (scrollTop < 500) {
-        hero.css("opacity", 1 - scrollTop / 250);
+        hero.css("opacity", 1 - scrollTop / 350);
     }
 
-    if ($('header').length) {
-        $('.parallax').css('top', scrollTop/3);
-    }
+    //parallax scrolling
+    $('.parallax').css('top', scrollTop/3);
 
     // stick the nav bar up at the top momentarily
     if (scrollTop > 100) {

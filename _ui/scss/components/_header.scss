@@ -1,31 +1,21 @@
-header {
-    .parallax {
-        position: relative;
-        background-position: top center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-}
-
 header.nudge {
     .parallax {
-        background-image: url(../assets/_nudge/nudge.jpg);
+        background-image: url(../_ui/assets/_nudge/nudge.jpg);
         background-size: auto 300px;
     }
 }
 
 header.fulcrum {
     .parallax {
-        background-image: url(../assets/_fulcrum/fulcrum_large.jpg);
+        background-image: url(../_ui/assets/_fulcrum/fulcrum_large.jpg);
         background-size: auto 400px;
-        background-position: top 80px center;
     }
 }
 
 header.rockbox {
     .parallax {
-        background-image: url(../assets/_rockbox/rockbox.jpg);
-        background-size: auto 300px; 
+        background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
+        background-size: auto 300px;
     }
 }
 
@@ -33,9 +23,9 @@ header.clutch {
     .parallax {
         position: relative;
 
-        background-image: url(../assets/_clutch/clutch.jpg);
+        background-image: url(../_ui/assets/_clutch/clutch.jpg);
         background-size: auto 400px;
-        background-position: top 60px center;
+        background-position: top right;
     }
 }
 
@@ -43,14 +33,13 @@ header.clutch {
     header.nudge {
         .parallax {
             background-size: auto 400px;
-            background-position: top 30px center;
+            background-position: top -50px center;
         }
     }
 
     header.fulcrum {
         .parallax {
             background-size: auto 500px;
-            background-position: top 80px center;
         }
     }
 }
@@ -58,17 +47,17 @@ header.clutch {
 @media only screen and (min-width: 640px) {
     header.rockbox {
         .parallax {
-            background-image: url(../assets/_rockbox/rockbox.jpg);
+            background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
             background-size: auto 400px;
-            background-position: top 30px center;
+            background-position: top -40px right;
         }
     }
 
     header.clutch {
         .parallax {
-            background-image: url(../assets/_clutch/clutch.jpg);
+            background-image: url(../_ui/assets/_clutch/clutch.jpg);
             background-size: auto 500px;
-            background-position: top 30px center;
+            background-position: top -50px right;
         }
     }
 }
@@ -78,7 +67,7 @@ header.clutch {
         .parallax {
             background-color: $bg-color;
             background-size: 960px auto;
-            background-position: top -15px center;
+            background-position: top -95px center;
         }
     }
 
@@ -86,7 +75,7 @@ header.clutch {
         .parallax {
             background-color: $bg-color;
             background-size: 960px auto;
-            background-position: top 30px center;
+            background-position: top -30px center;
         }
     }
 
@@ -94,7 +83,7 @@ header.clutch {
         .parallax {
             background-color: $bg-color;
             background-size: 960px auto;
-            background-position: top 20px center;
+            background-position: top -80px center;
         }
     }
 
@@ -102,7 +91,7 @@ header.clutch {
         .parallax {
             background-color: $bg-color;
             background-size: 960px auto;
-            background-position: top center;
+            background-position: top -100px center;
         }
     }
 }

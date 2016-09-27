@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis:500,700|Karla|Sniglet" rel="stylesheet">
     </head>
     <body>
-        <nav class="nav-bar-summary sticky">
+        <nav class="nav-bar-project sticky">
             <div class="container">
                 <a href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -104,17 +104,9 @@
                     </g>
                     </svg>
                 </a>
-
-
-                <div id="nav-icon">
-                    <span class="line gray"></span>
-                    <span class="line gray"></span>
-                    <span class="line gray"></span>
-                    <span class="line gray"></span>
-                </div>
                 <div id="nav-links">
                     <ul>
-                        <li><a href="#portfolio">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><!-- hello--></li>
+                        <li><a href="/#portfolio">More Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,63 +117,73 @@
 
             </div>
         </header>
+        <div class="parallax-base">
+            <section class="summary">
+                <div class="container">
+                    <div class="headings subtitle">
+                        <h1>Rock Box</h1>
+                        <p class="font-gray">
+                            based on design from Turnstyle
+                        </p>
+                        <ul>
+                            <li>html</li>
+                            <li>sass</li>
+                            <li>jQuery</li>
+                            <li>gulp</li>
+                        </ul>
+                        <a class="website" href="http://theheidiyee.com/RockBox/" target="_blank" >Check it out</a>
+                    </div>
+                    <div class="to-the-right">
+                        <p>
 
-        <section class="summary">
-            <div class="container">
-                <h1>Rock Box</h1>
+                            Rock Box is a local karaoke place here in Seattle, so I was very excited to start working on this project. Here is a link if you want to check out their actual site - www.rockboxseattle.com, which looks like an old flash site and could really use a makeover. This design also came from Turnstyle - cause they’re awesome. <br><br>
 
-                <p class="font-gray">
-                    based on design from Turnstyle, built using:
-                </p>
+                            Since this was my third project and I was getting really comfortable with html, css, and jQuery, I wanted to try out sass. I had already heard a lot about sass from other developers and was told it can really help organize your project. With sass, I also learned gulp and am so happy I did. Gulp is pretty easy to use and gave me the ability to auto load my page, which I loveeee, as well as consolidate everything into one final folder. Awesome stuff.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="summary bg">
+                <div class="container extra-bottom-padding">
+                    <div class="headings faded">
+                        <h2>Lessons Learned</h2>
+                        <ul class="subtitle faded">
+                            <li>web design</li>
+                            <li>illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="to-the-right">
+                        <p>
+                            Rock Box turned out to be a really difficult project to work on for a couple reasons, mostly because I know nothing about design. The design came in a desktop layout, so I had to create it’s mobile layout, which was a challenge for me since I didn’t have to for the last two project. One of the challenges was incorporating all the images on a small screen.  I decided to take out the bigger images, such as the person singing, until it was viewed on a wider screen. I think this helped a lot and I feel like the mobile layout turned out well. <br><br>
 
-                <ul class="subtitle">
-                    <li>html</li>
-                    <li>sass</li>
-                    <li>jQuery</li>
-                    <li>gulp</li>
-                </ul>
-                <p>
-                    Rock Box is a local karaoke place here in Seattle, so I was very excited to start working on this project. Here is a link if you want to check out their actual site - www.rockboxseattle.com, which looks like an old flash site and could really use a makeover. This design also came from Turnstyle - cause they’re awesome. <br><br>
+                            Another concept I learned was the hero doesn’t have to be the full height of the screen. I had used 100vh for the hero section in fulcrum, so I thought that would be the same case for any hero image on any site. This is not true and I found out this can give you issues if the height of the screen is not large enough to fit all the content. I started to notice that text would scrunch together in smaller mobile screens. I ended up making a height media query to fix this, but this taught me a valuable lesson that every site is different and what I did on the last site might not work well on the next. <br><br>
 
-                    Since this was my third project and I was getting really comfortable with html, css, and jQuery, I wanted to try out sass. I had already heard a lot about sass from other developers and was told it can really help organize your project. With sass, I also learned gulp and am so happy I did. Gulp is pretty easy to use and gave me the ability to auto load my page, which I loveeee, as well as consolidate everything into one final folder. Awesome stuff.
+                            As I started to build out the desktop layout of Rock Box, I noticed the sections weren’t aligning to each other and the site didn’t look cohesive. Since I was using sass to build the project, each section had its own sass file. This came with its pros and cons. Pros was it kept my project organized and I was able to build each section’s css independent from each other. However, that also brought a con with it, which was that the margins and paddings of each section may not align with each other, especially because the content switched between text-align center or text-align to the left. If you looked at the project from top to bottom, you didn’t see any vertical alignment. For example, from the picture below, you can see that the footer doesn’t not align with the section above it. I struggled a lot with this and ended up leaving it the way it was because I didn’t know how to fix it. The solution wasn’t found till my next project, Clutch.
+                            <br><br>
 
+                            <img src="_ui/assets/_rockbox/alignment_issue.jpg" alt="" />
 
-                </p>
-                <a class="faded" href="http://theheidiyee.com/RockBox/" target="_blank" >Check it out</a>
-                <!-- <div class="parallax slide-1">
-
-                </div> -->
-
-
-                <h2 class="faded">Lessons Learned</h2>
-                <ul class="subtitle">
-                    <li>web design</li>
-                    <li>illustrator</li>
-                </ul>
-                <p>
-                    Rock Box turned out to be a really difficult project to work on for a couple reasons, mostly because I know nothing about design. The design came in a desktop layout, so I had to create it’s mobile layout, which was a challenge for me since I didn’t have to for the last two project. One of the challenges was incorporating all the images on a small screen.  I decided to take out the bigger images, such as the person singing, until it was viewed on a wider screen. I think this helped a lot and I feel like the mobile layout turned out well. <br><br>
-
-                    Another concept I learned was the hero doesn’t have to be the full height of the screen. I had used 100vh for the hero section in fulcrum, so I thought that would be the same case for any hero image on any site. This is not true and I found out this can give you issues if the height of the screen is not large enough to fit all the content. I started to notice that text would scrunch together in smaller mobile screens. I ended up making a height media query to fix this, but this taught me a valuable lesson that every site is different and what I did on the last site might not work well on the next. <br><br>
-
-                    As I started to build out the desktop layout of Rock Box, I noticed the sections weren’t aligning to each other and the site didn’t look cohesive. Since I was using sass to build the project, each section had its own sass file. This came with its pros and cons. Pros was it kept my project organized and I was able to build each section’s css independent from each other. However, that also brought a con with it, which was that the margins and paddings of each section may not align with each other, especially because the content switched between text-align center or text-align to the left. If you looked at the project from top to bottom, you didn’t see any vertical alignment. For example, from the picture below, you can see that the footer doesn’t not align with the section above it. I struggled a lot with this and ended up leaving it the way it was because I didn’t know how to fix it. The solution wasn’t found till my next project, Clutch.
-                    <br><br>
-
-                    <img src="_ui/assets/_rockbox/alignment_issue.jpg" alt="" />
-
-                    Lastly, I learned a lot more about illustrator. Since the fulcrum site already came with a design for mobile and desktop, I didn’t have to do much except save images. With Rock Box, I learned more about the differences between the types of image files you can use, svg vs jpg vs gifs and saving for web. I also learned how to use an artboard and how to save the images piece by piece using an artboard so the canvas size is still the same. I really like using illustrator now and even used it to create the design layout for my portfolio.
+                            Lastly, I learned a lot more about illustrator. Since the fulcrum site already came with a design for mobile and desktop, I didn’t have to do much except save images. With Rock Box, I learned more about the differences between the types of image files you can use, svg vs jpg vs gifs and saving for web. I also learned how to use an artboard and how to save the images piece by piece using an artboard so the canvas size is still the same. I really like using illustrator now and even used it to create the design layout for my portfolio.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 
-                </p>
-            </div>
-
-        </section>
         <footer>
             <div class="container">
+                <a class="smooth icon-up-chevron" href="top"></a>
+                <p class="icons">
+                    <a class="icon icon-linkedin" href="https://www.linkedin.com/in/heidiyee" target="_blank"></a>
+                    <a class="icon icon-github" href="https://github.com/heidiyee" target="_blank"></a>
+                </p>
                 <p>
                     &copy; Made by Heidi Yee - Developer 2016
                 </p>
             </div>
         </footer>
+
 
         <script src="js/main.min.js"></script>
     </body>
