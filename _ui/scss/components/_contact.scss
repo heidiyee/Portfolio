@@ -41,6 +41,9 @@
             .submit {
                 background-color: $pink;
                 width: 40%;
+                padding: 1em 0;
+                border-radius: 5px;
+                cursor: pointer;
             }
         }
     }

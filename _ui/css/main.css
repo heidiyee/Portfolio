@@ -290,9 +290,10 @@ header.clutch .parallax {
   width: 100%;
   height: 80px;
   overflow: visible;
+  top: 0;
   z-index: 20;
-  -webkit-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease; }
+  -webkit-transition: background-color 0.25s ease, top 0.25s linear;
+  transition: background-color 0.25s ease, top 0.25s linear; }
   .nav-bar .container, .nav-bar-project .container {
     width: 100%;
     height: 100%;
@@ -400,13 +401,13 @@ header.clutch .parallax {
     background-color: #fff;
     -webkit-box-shadow: 1px 1px 1px #ccc;
     box-shadow: 1px 1px 1px #ccc;
-    -webkit-transition: background-color 0.5s ease, height 0.25s linear;
-    transition: background-color 0.5s ease, height 0.25s linear; }
+    -webkit-transition: background-color 0.5s ease, top 0.25s linear;
+    transition: background-color 0.5s ease, top 0.25s linear; }
   .nav-bar.hide, .hide.nav-bar-project {
-    height: 0;
+    top: -80px;
     overflow: hidden;
-    -webkit-transition: overflow 0.25s linear, height 0.25s linear;
-    transition: overflow 0.25s linear, height 0.25s linear; }
+    -webkit-transition: top 0.25s linear;
+    transition: top 0.25s linear; }
 
 @media only screen and (min-width: 750px) {
   .nav-bar .container #nav-icon, .nav-bar-project .container #nav-icon {
@@ -626,7 +627,10 @@ header.clutch .parallax {
       transition: border 0.25s linear; }
     .contact .container .form .submit {
       background-color: #FFA7A7;
-      width: 40%; }
+      width: 40%;
+      padding: 1em 0;
+      border-radius: 5px;
+      cursor: pointer; }
 
 @media only screen and (min-width: 750px) {
   .contact .container {

@@ -626,7 +626,10 @@ header.clutch .parallax {
       transition: border 0.25s linear; }
     .contact .container .form .submit {
       background-color: #FFA7A7;
-      width: 40%; }
+      width: 40%;
+      padding: 1em 0;
+      border-radius: 5px;
+      cursor: pointer; }
 
 @media only screen and (min-width: 750px) {
   .contact .container {

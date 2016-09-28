@@ -30,7 +30,7 @@ var submit = function() {
         messageVal = message.val();
     });
 
-    $("#submit").click(function() {
+    $(".submit").click(function() {
 
         // var dataString = 'name' + name + 'email' + email;
         if (nameVal == '' || emailVal == '' || messageVal == '' || emailValid == false) {
@@ -50,11 +50,13 @@ var submit = function() {
             }
 
         } else {
+            var formData = $('.form').serialize();
                 // AJAX code to submit form.
             $.ajax({
             type: "POST",
-            url: "email.php",
+            url: "/email.php",
             cache: false,
+            data: formData,
             success: function(data) {
                     console.log(data);
                     if (data.toLowerCase().indexOf("thanks") >= 0) {
