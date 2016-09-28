@@ -458,6 +458,11 @@ header.clutch .parallax {
           .nav-bar .container #nav-links ul li a:hover {
             color: #FFA7A7; } }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .nav-bar .container svg {
+    top: 5px; } }
+
 .hero {
   position: relative; }
   .hero .parallax {
