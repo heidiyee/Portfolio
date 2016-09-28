@@ -5,6 +5,7 @@
     height: 80px;
     overflow: visible;
     top: 0;
+    transform: translateZ(0);
 
     z-index: 20;
     transition: background-color 0.25s ease, top 0.25s linear;
@@ -29,8 +30,8 @@
 
                 transition: fill 0.5s ease;
 
-                &.gray {
-                    fill: $gray;
+                &.black {
+                    fill: $black;
 
                     transition: fill 0.5s ease;
                 }
@@ -164,6 +165,44 @@
         transition: top 0.25s linear;
 
     }
+
+    //nav bar for individual project page. Since scrolling.js selects nav bar using class nav-bar, I changed the class for individual pages to nav bar project.
+    &.project {
+        background-color: $white;
+
+        .container {
+            svg {
+                .st0 {
+                    fill: $black;
+                }
+            }
+
+            #nav-links {
+                width: 100%;
+                height: auto;
+                top: 20px;
+                right: 20px;
+                left: auto;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        float: right;
+                        display: inline-block;
+
+                        a {
+                            color: $gray;
+
+                            &:hover {
+                                color: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -184,11 +223,13 @@
 
                 ul {
                     padding: 0;
+                    float: right;
 
                     li {
-                        float: right;
                         display: inline-block;
                         padding: 0 20px;
+
+                        float: left;
 
                         a {
                             // font-weight: bold;
@@ -201,44 +242,6 @@
                             &:hover {
                                 color: $pink;
                             }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-//nav bar for individual project page. Since scrolling.js selects nav bar using class nav-bar, I changed the class for individual pages to nav bar project.
-.nav-bar-project {
-    @extend .nav-bar;
-
-    .container {
-        svg {
-            .st0 {
-                fill: $gray;
-            }
-        }
-
-        #nav-links {
-            width: 100%;
-            height: auto;
-            top: 20px;
-            right: 20px;
-            left: auto;
-
-            ul {
-                padding: 0;
-
-                li {
-                    float: right;
-                    display: inline-block;
-
-                    a {
-                        color: $gray;
-
-                        &:hover {
-                            color: $pink;
                         }
                     }
                 }

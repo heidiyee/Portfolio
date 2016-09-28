@@ -6,8 +6,6 @@ var hero = $(".hero"),
 //for showing the nav when scrolling up
 var scrollTop,
     lastScrollTop = 0,
-    //if user is scrolling up, add space to scrollTop
-    extraSpace = false,
     delta = 15;
 
 
@@ -27,19 +25,21 @@ $(window).scroll(function(){
     //parallax scrolling
     $('.parallax').css('top', scrollTop/3);
 
-    // stick the nav bar up at the top momentarily
+    // stick the nav bar on index page up at the top momentarily and add white background with black and gray font
     if (scrollTop > 100) {
-        navBar.addClass('sticky');
-        $(".st0").addClass('gray');
-        $(".line").addClass('gray');
-        $('#nav-links a').addClass('gray');
-
-
+        if (!navBar.hasClass('project')) {
+            $(".st0").addClass('black');
+            $(".line").addClass('gray');
+            $('#nav-links a').addClass('gray');
+            navBar.addClass('sticky');
+        }
     } else {
-        navBar.removeClass('sticky');
-        $(".st0").removeClass('gray');
-        $(".line").removeClass('gray');
-        $('#nav-links a').removeClass('gray');
+        if (!navBar.hasClass('project')) {
+            $(".st0").removeClass('black');
+            $(".line").removeClass('gray');
+            $('#nav-links a').removeClass('gray');
+            navBar.removeClass('sticky');
+        }
     }
 
     if(scrollTop + window.innerHeight >= getDocHeight()) {
@@ -48,13 +48,16 @@ $(window).scroll(function(){
        footer.removeClass("appear");
     }
 
-    //hide nav-bar
-    if (scrollTop > 425) {
-        //overflow is hidden to hide svg and nav-icon
-        // navBar.addClass("hide");
+    //hide nav-bar on project sites at higher scrolltop
+    if (scrollTop > 275) {
+        if (navBar.hasClass('project')) {
+            upOrDown();
+        }
+    }
+
+    //hide navbar on main page
+    if (scrollTop > 400) {
         upOrDown();
-    } else {
-        extraSpace = false;
     }
 });
 

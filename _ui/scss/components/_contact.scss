@@ -1,6 +1,6 @@
 .contact {
     .container {
-        padding-bottom: 20em;
+        padding-bottom: 250px;
 
         #result {
             @include span-columns(10);
@@ -14,6 +14,8 @@
             @include shift(1);
 
             input, textarea, .submit {
+                font-family: 'Karla', sans-serif;
+                font-weight: 400;
                 font-size: 1.4em;
             }
 
@@ -58,6 +60,11 @@
             .form {
                 @include span-columns(12);
                 @include shift(0);
+
+                textarea {
+                    height: 200px;
+                }
+
                 #name, #email {
                     @include span-columns(6);
                     @include shift(0);

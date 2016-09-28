@@ -1,6 +1,7 @@
 body {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    color: $black;
 }
 
 h1 {
@@ -56,4 +57,8 @@ ul li {
         content: "...";
         color: $gray;
     }
+}
+
+.underline {
+    text-decoration: underline;
 }

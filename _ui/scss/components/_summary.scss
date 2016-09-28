@@ -13,40 +13,39 @@
             }
         }
 
-        a {
+        a.website {
             padding-top: 2em;
 
             font-size: 1.8em;
             font-weight: bold;
             color: $pink;
 
-            &.website {
-                &::after {
-                    content: "\e902";
-                    font-family: 'icomoon' !important;
-                    speak: none;
-                    font-size: 0.6em;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-variant: normal;
-                    text-transform: none;
-                    line-height: 1;
+            &::after {
+                content: "\e902";
+                font-family: 'icomoon' !important;
+                speak: none;
+                font-size: 0.6em;
+                font-style: normal;
+                font-weight: bold;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
 
-                    padding-left: 8px;
+                padding-left: 8px;
 
-                    /* Better Font Rendering =========== */
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
 
-                    transition: padding 0.2s linear;
-                }
-
-                &:hover::after {
-                    padding-left: 14px;
-
-                    transition: padding 0.2s linear;
-                }
+                transition: padding 0.2s linear;
             }
+
+            &:hover::after {
+                padding-left: 14px;
+
+                transition: padding 0.2s linear;
+            }
+
         }
 
         img {

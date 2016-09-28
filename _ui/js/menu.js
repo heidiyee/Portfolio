@@ -6,7 +6,6 @@ var topMenu = function() {
 		if ($(this).hasClass("open")) {
 			$('body').css("overflow", "hidden");
 			if (scrollTop < 100) {
-				console.log("not working");
 				$(".st0").addClass('gray');
 				$(".line").addClass('gray');
 			}

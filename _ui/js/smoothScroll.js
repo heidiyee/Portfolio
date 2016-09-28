@@ -6,8 +6,6 @@ var smoothScroll = function() {
         var target = $(this.getAttribute('href'));
         var t = $(window).scrollTop();
 
-        console.log(target);
-
         if (target.length) {
             $('body').css("overflow", "auto");
             $("#nav-icon").removeClass("open");
@@ -16,7 +14,6 @@ var smoothScroll = function() {
 
             if (upTop < t) {
                 upTop -= navBar.outerHeight();
-                console.log("scroll down " + upTop);
             }
 
             $('html, body').stop().animate({

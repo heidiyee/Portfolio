@@ -14,23 +14,21 @@ var submit = function() {
 
     name.on('input', function() {
         name.removeClass('red');
-        nameVal = name.val();
-
     });
 
     email.on('input', function() {
         email.removeClass('red');
-        emailVal = email.val();
-        emailValid = validateEmail(emailVal);
-        console.log(emailValid);
     });
 
     message.on('input', function() {
         message.removeClass('red');
-        messageVal = message.val();
     });
 
     $(".submit").click(function() {
+        nameVal = name.val();
+        emailVal = email.val();
+        emailValid = validateEmail(emailVal);
+        messageVal = message.val();
 
         // var dataString = 'name' + name + 'email' + email;
         if (nameVal == '' || emailVal == '' || messageVal == '' || emailValid == false) {
@@ -58,7 +56,6 @@ var submit = function() {
             cache: false,
             data: formData,
             success: function(data) {
-                    console.log(data);
                     if (data.toLowerCase().indexOf("thanks") >= 0) {
                         $("#result").html(data);
                     } else {

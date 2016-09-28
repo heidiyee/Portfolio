@@ -19,8 +19,21 @@
                 text-align: center;
                 cursor: default;
 
-                padding: 6em 20px 4em;
+                padding: 5em 20px 4em;
             }
         }
     }
+}
+
+@media only screen and (min-width: 702px) {
+    .hero {
+        .parallax {
+            .container {
+                p {
+                    padding-top: 6em;
+                }
+            }
+        }
+    }
+
 }
