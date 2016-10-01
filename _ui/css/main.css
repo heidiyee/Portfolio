@@ -464,13 +464,11 @@ header.clutch .parallax {
     top: 5px; } }
 
 .hero {
-  position: relative; }
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #6ac1c6), to(#fff));
+  background: -webkit-linear-gradient(top, #6ac1c6 50%, #fff 100%);
+  background: linear-gradient(to bottom, #6ac1c6 50%, #fff 100%); }
   .hero .parallax {
-    background-color: #6ac1c6;
-    background: -webkit-gradient(linear, left top, left bottom, from(#6ac1c6), to(#fff));
-    background: -webkit-linear-gradient(#6ac1c6, #fff);
-    background: linear-gradient(#6ac1c6, #fff);
-    background-attachment: fixed;
     height: 500px; }
     .hero .parallax .container p {
       font-family: "Sniglet", cursive;
@@ -716,10 +714,8 @@ footer {
       display: inline-block;
       width: 80px;
       height: 0;
-      bottom: -webkit-calc(100% + 40px);
       bottom: calc(100% + 40px);
       padding-top: 0;
-      left: -webkit-calc((100% - 80px)/2);
       left: calc((100% - 80px)/2);
       font-size: 1.6em;
       text-align: center;

@@ -1,10 +1,8 @@
 .hero {
     position: relative;
+    background: linear-gradient(to bottom, $cotton 50%, $white 100%);
 
     .parallax {
-        background-color: $cotton;
-        background: linear-gradient($cotton, $white);
-        background-attachment: fixed;
 
         height: 500px;
 
