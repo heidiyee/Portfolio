@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16.9 14.7" style="enable-background:new 0 0 16.9 14.7;" xml:space="preserve">
+	 viewBox="0 0 99.6 100" style="enable-background:new 0 0 99.6 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F69799;}
-	.st1{font-family:'MyriadPro-Regular';}
-	.st2{font-size:12px;}
+	.st0{fill:#FFFFFF;stroke:#69C9CA;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{fill:#F7A5A7;}
+	.st3{font-family:'KittenBold';}
+	.st4{font-size:60px;}
 </style>
-<text id="XMLID_1_" transform="matrix(1 0 0 1 0.934 11.6248)" class="st0 st1 st2">HY</text>
+<ellipse id="XMLID_82_" class="st0" cx="49.8" cy="50" rx="44.8" ry="45"/>
+<image style="overflow:visible;" width="162" height="55" id="XMLID_150_" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKcAAAA/CAYAAACFI9jCAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcxJREFUeNrs3NuOAiEQhGGdmPj+
+j2uyiZu9VXecQwMNfP+tBqacopoe0csFAAAAAAAAAAAAAACscf32htv9/oyY6OfxuLYYfwv/XcOZ
+MTPRq76b9VnXEK0WYI8aFzbCMMlZevXWToe11f/3Wu+lvWd9yvrLwsiwB/5kqggTReqroVFZH7QJ
+GkHf1ObckiIlNv21UjOrvq0aJSckJ+LSbhaNCxO8l5XXEtPSMFElPau+NY2SU2qm1cicOuu0Gqc0
+55ZOsXbpixw/o74jc0hOqZlWI3Paa6bVWOXI3NoKKT3+kZK3dm0lEi3yq8qM+o5qlJyNS2uPj6lq
+aWROe820Gqc6MhdRPiOPmUWnZjZ9ZzVKzkRJ1iI1a8+5qz/QJY87d+unAGfnXxgxx02PPrib0dR7
+NSrrkyV2TxqnLet7V3FJQ5XY92XSd1TjFMlZ4vc4R29mCRNk0hepUVlP3EnPro85mSKtxuHNWXIv
+tXfsGiW99diR1zNdcp5JquiUy9AIZb4eZX2ABB9V4+LDajNH6466xhxnNU6VnFF/6ZI1NVvpK6VR
+Wdehp9U4rDlr7vG+/ZPbyPpm2U8DAAAAAAAAAAAAAAAAAAAASMSvAAMATyRQ5qH0wXAAAAAASUVO
+RK5CYII=" transform="matrix(0.24 0 0 0.24 306.0003 385.9563)">
+</image>
+<rect id="XMLID_79_" x="22.9" y="24.2" class="st1" width="53.7" height="54.6"/>
+<text id="XMLID_80_" transform="matrix(1 0 0 1 22.9407 65.6922)" class="st2 st3 st4">H</text>
 </svg>

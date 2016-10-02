@@ -17,7 +17,19 @@
                 text-align: center;
                 cursor: default;
 
-                padding: 5em 20px 4em;
+                padding: 4em 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $iphone6-width) {
+    .hero {
+        .parallax {
+            .container {
+                p {
+                    padding-top: 5em;
+                }
             }
         }
     }
@@ -33,5 +45,4 @@
             }
         }
     }
-
 }

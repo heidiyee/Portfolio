@@ -476,7 +476,11 @@ header.clutch .parallax {
       color: #fff;
       text-align: center;
       cursor: default;
-      padding: 5em 20px 4em; }
+      padding: 4em 20px; }
+
+@media only screen and (min-width: 375px) {
+  .hero .parallax .container p {
+    padding-top: 5em; } }
 
 @media only screen and (min-width: 702px) {
   .hero .parallax .container p {

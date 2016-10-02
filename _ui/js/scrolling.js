@@ -49,16 +49,17 @@ $(window).scroll(function(){
     }
 
     //hide nav-bar on project sites at higher scrolltop
-    if (scrollTop > 275) {
-        if (navBar.hasClass('project')) {
+    if (navBar.hasClass('project')) {
+        if (scrollTop > 275) {
+            upOrDown();
+        }
+    } else {
+        //hide navbar on main page
+        if (scrollTop > 400) {
             upOrDown();
         }
     }
 
-    //hide navbar on main page
-    if (scrollTop > 400) {
-        upOrDown();
-    }
 });
 
 //returns true if scrolling down, returns false if scrolling up

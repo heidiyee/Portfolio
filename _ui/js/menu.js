@@ -1,18 +1,18 @@
 var topMenu = function() {
 	$("#nav-icon").click(function(e) {
-		var scrollTop = $(window).scrollTop();
+		var currentScrollTop = $(window).scrollTop();
         $(this).toggleClass("open");
         $("#nav-links").toggleClass("popup");
 		if ($(this).hasClass("open")) {
 			$('body').css("overflow", "hidden");
-			if (scrollTop < 100) {
-				$(".st0").addClass('gray');
+			if (currentScrollTop < 100) {
+				$(".st0").addClass('black');
 				$(".line").addClass('gray');
 			}
 		} else {
 			$('body').css("overflow", "auto");
-			if (scrollTop < 100) {
-				$(".st0").removeClass('gray');
+			if (currentScrollTop < 100) {
+				$(".st0").removeClass('black');
 				$(".line").removeClass('gray');
 			}
 		}
