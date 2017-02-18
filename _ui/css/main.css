@@ -625,7 +625,9 @@ header.clutch .parallax {
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
-    margin-left: 8.5298%; }
+    margin-left: 8.5298%;
+    max-height: 500px;
+    opacity: 1; }
     .contact .container .form:last-child {
       margin-right: 0; }
     .contact .container .form input, .contact .container .form textarea, .contact .container .form .submit {
@@ -652,6 +654,12 @@ header.clutch .parallax {
       padding: 1em 0;
       border-radius: 5px;
       cursor: pointer; }
+    .contact .container .form.hide {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-transition: opacity 0.25s ease;
+      transition: opacity 0.25s ease; }
 
 @media only screen and (min-width: 750px) {
   .contact .container {
