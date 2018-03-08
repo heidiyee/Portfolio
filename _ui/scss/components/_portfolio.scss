@@ -76,6 +76,18 @@
                     }
                 }
             }
+			&.rezza {
+				background-color: #292831;
+				figure {
+					img {
+						object-fit: contain;
+						height: 300px;
+					}
+				}
+			}
+			&.starbucks {
+				background-color: #f7c400;
+			}
         }
     }
 }

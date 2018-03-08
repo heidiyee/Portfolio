@@ -1,97 +1,121 @@
-header.nudge {
-    .parallax {
-        background-image: url(../_ui/assets/_nudge/nudge.jpg);
-        background-size: auto 300px;
-    }
-}
+header {
+	&.nudge {
+	    .parallax {
+	        background-image: url(../_ui/assets/_nudge/nudge.jpg);
+	        background-size: auto 300px;
+	    }
+	}
+	&.fulcrum {
+	    .parallax {
+	        background-image: url(../_ui/assets/_fulcrum/fulcrum_large.jpg);
+	        background-size: auto 400px;
+	    }
+	}
+	&.rockbox {
+	    .parallax {
+	        background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
+	        background-size: auto 300px;
+	    }
+	}
+	&.clutch {
+	    .parallax {
+	        position: relative;
 
-header.fulcrum {
-    .parallax {
-        background-image: url(../_ui/assets/_fulcrum/fulcrum_large.jpg);
-        background-size: auto 400px;
-    }
-}
-
-header.rockbox {
-    .parallax {
-        background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
-        background-size: auto 300px;
-    }
-}
-
-header.clutch {
-    .parallax {
-        position: relative;
-
-        background-image: url(../_ui/assets/_clutch/clutch.jpg);
-        background-size: auto 400px;
-        background-position: top right;
-    }
+	        background-image: url(../_ui/assets/_clutch/clutch.jpg);
+	        background-size: auto 400px;
+	        background-position: top right;
+	    }
+	}
+	&.rezza {
+	    .parallax {
+	        position: relative;
+			background-color: #292831;
+	        background-image: url('../assets/_rezza/rezza_logo.png');
+	        // background-size: auto 400px;
+	        background-position: center;
+	    }
+	}
+	
+	&.starbucks {
+		.parallax {
+			position: relative;
+			background-color: #115738;
+			background-image: url('../assets/_starbucks/starbucks-banner.jpg');
+			// background-size: auto 400px;
+			background-position: center;
+		}
+	}
 }
 
 @media only screen and (min-width: 530px) {
-    header.nudge {
-        .parallax {
-            background-size: auto 400px;
-            background-position: top -50px center;
-        }
-    }
+    header {
+		&.nudge {
+	        .parallax {
+	            background-size: auto 400px;
+	            background-position: top -50px center;
+	        }
+	    }
 
-    header.fulcrum {
-        .parallax {
-            background-size: auto 500px;
-        }
-    }
+	    &.fulcrum {
+	        .parallax {
+	            background-size: auto 500px;
+	        }
+	    }
+	}
 }
 
 @media only screen and (min-width: 640px) {
-    header.rockbox {
-        .parallax {
-            background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
-            background-size: auto 400px;
-            background-position: top -40px right;
-        }
-    }
+    header {
+		&.rockbox {
+	        .parallax {
+	            background-image: url(../_ui/assets/_rockbox/rockbox.jpg);
+	            background-size: auto 400px;
+	            background-position: top -40px right;
+	        }
+	    }
 
-    header.clutch {
-        .parallax {
-            background-image: url(../_ui/assets/_clutch/clutch.jpg);
-            background-size: auto 500px;
-            background-position: top -50px right;
-        }
-    }
+	    &.clutch {
+	        .parallax {
+	            background-image: url(../_ui/assets/_clutch/clutch.jpg);
+	            background-size: auto 500px;
+	            background-position: top -50px right;
+	        }
+	    }
+	}
 }
 
 @media only screen and (min-width: 780px) {
-    header.nudge {
-        .parallax {
-            background-color: $bg-color;
-            background-size: 960px auto;
-            background-position: top -95px center;
-        }
-    }
+	header {
+		&.nudge {
+	        .parallax {
+	            background-color: $bg-color;
+	            background-size: 960px auto;
+	            background-position: top -95px center;
+	        }
+	    }
 
-    header.fulcrum {
-        .parallax {
-            background-color: $bg-color;
-            background-size: 960px auto;
-            background-position: top -30px center;
-        }
-    }
+	    &.fulcrum {
+	        .parallax {
+	            background-color: $bg-color;
+	            background-size: 960px auto;
+	            background-position: top -30px center;
+	        }
+	    }
 
-    header.rockbox {
-        .parallax {
-            background-color: $bg-color;
-            background-size: 960px auto;
-            background-position: top -80px center;
-        }
-    }
+	    &.rockbox {
+	        .parallax {
+	            background-color: $bg-color;
+	            background-size: 960px auto;
+	            background-position: top -80px center;
+	        }
+	    }
 
-    header.clutch {
-        .parallax {
-            background-color: $bg-color;
-            background-size: 960px auto;
-            background-position: top -100px center;
-        }
-    }
+	    &.clutch {
+	        .parallax {
+	            background-color: $bg-color;
+	            background-size: 960px auto;
+	            background-position: top -100px center;
+	        }
+	    }
+	}
 }

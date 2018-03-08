@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Heidi Yee</title>
+        <title>Rezza |Heidi Yee</title>
         <link rel="icon" type="image/png" href="_ui/assets/favicomatic/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="_ui/assets/favicomatic/favicon-16x16.png" sizes="16x16" />
-
 
         <!--build:css css/styles.min.css-->
         <link rel="stylesheet" href="_ui/css/main.css">
@@ -17,8 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis:500,700|Karla|Sniglet" rel="stylesheet">
     </head>
     <body>
-        <h1 class="offscreen">Heidi Yee's Website</h1>
-        <nav class="nav-bar">
+        <nav class="nav-bar project sticky">
             <div class="container">
                 <a href="index.html">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -114,105 +112,60 @@
                     </g>
                     </svg>
                 </a>
-                <div id="nav-icon">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-
                 <div id="nav-links">
                     <ul>
-                        <li><a class="smooth" href="#portfolio">Portfolio</a></li><li><a class="smooth" href="#about">About</a></li><li><a class="smooth" href="#contact">Contact</a></li>
+                        <li><a href="/#portfolio">More Projects</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="hero">
+        <div class="filler"></div>
+        <header class="starbucks">
             <div class="parallax">
-                <div class="container">
-                    <p>
-                        Hi, my name is Heidi<br>
-                        I'm a front end developer
-                        based in Seattle
-                    </p>
-                </div>
 
             </div>
-        </section>
+        </header>
         <div class="parallax-base">
-
-            <section id="portfolio" class="portfolio">
-                <h2>Portfolio</h2>
+            <section class="summary">
                 <div class="container">
-                    <a class="faded details rezza" href="rezza.html">
-                        <figure>
-                            <img src="_ui/assets/_rezza/rezza_logo.png" alt="Rezza" />
-                            <figcaption>
-                                Rezza
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details starbucks" href="starbucks.html">
-                        <figure>
-                            <img src="_ui/assets/_starbucks/starbucks-cup.jpg" alt="store.starbucks.com" />
-                            <figcaption>
-                                Starbucks
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="rockbox.html">
-                        <figure>
-                            <img src="_ui/assets/_rockbox/rockbox_smaller.jpg" alt="RockBox project" />
-                            <figcaption>
-                                Rock Box
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a class="faded details" href="clutch.html">
-                        <figure>
-                            <img src="_ui/assets/_clutch/clutch.jpg" alt="Clutch project" />
-                            <figcaption>
-                                Clutch
-                            </figcaption>
-                        </figure>
-                    </a>
+                    <div class="headings subtitle">
+                        <h1>Starbucks</h1>
+                        <p class="font-gray">
+                            Content Management and Front End Web Developer
+                        </p>
+                        <ul>
+                            <li>Content Management</li>
+							<li>Demandware</li>
+                        </ul>
+                        <a class="website" href="https://store.starbucks.com/" target="_blank" >Check it out</a>
+                    </div>
+                    <div class="to-the-right">
+                        <p>
+							I contracted at Starbucks working on their e-commerce website, where you were able to buy different starbucks products such as coffee beans, syrups, drinkware, etc. Sadly, the website was taken down a couple months after I left Starbucks to start at Rezza.
+                        </p>
+                    </div>
                 </div>
             </section>
-
-            <section id="about" class="about">
-                <h2 class="faded">About</h2>
-                <div class="container faded">
-                    <p >
-                        Hi there, my name is Heidi, but you probably know that by now. 😅<br><br>
-                        I started coding a couple years ago. I first learned about iOS development - Swift, Objective-C, OOP - but after working on my portfolio site, I started to lean more towards front end development. I really like front end development because you can reach a larger audience, although I find coding in general to be fun and rewarding.<br><br>
-
-                        Before that, I was an industrial engineer for three years, but quit my job after realizing that becoming a developer was going to open more doors for me. I think it's one of the craziest things I've ever done, but I don't regret it at all. <br><br>
-
-                        I'm currently a front end developer at Rezza.<br><br>
-
-                        Please feel free to contact me about any full time job inqueries. You can also contact me about scuba diving, hiking or dogs. I love all the above. 🐶🐳🗻
-                    </p>
-                    <img src="_ui/assets/scuba_yee.jpg" alt="" />
-
-                </div>
-
-            </section>
-            <section id="contact" class="contact">
-                <h2 class="faded">Contact</h2>
-                <div class="container faded">
-                    <p id="result">
-                        Send me a message and I'll get back to you soon
-                    </p>
-                    <form class="form" method="post" action="email.php">
-                        <input type="text" name="name" id="name" placeholder="NAME *" required>
-                        <input type="email" name="email" id="email" placeholder="EMAIL *" required>
-                        <textarea name="message" id="message" rows="4" placeholder="MESSAGE *" required></textarea>
-                        <div class="submit">Submit</div>
-                    </form>
+            <section class="summary bg">
+                <div class="container extra-bottom-padding">
+                    <div class="headings faded">
+                        <h2>Lessons Learned</h2>
+                        <ul class="subtitle faded">
+                            <li>Demandware (CMS)</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="to-the-right">
+                        <p>
+                            At Starbucks, I mostly did a lot of content management. I was in charge of making sure everything in our CMS was correct and ready for launch. On some occassions, I would make html/css changes in order to fit one off campaigns into the react templates. This gave me some experiene reading the syntax of react and seeing how it worked with our CMS. 
+							
+							Overall, working at Starbucks was a good experience for my first real front end job at Rezza. 
+                        </p>
+                    </div>
                 </div>
             </section>
-
         </div>
+
 
         <footer>
             <div class="container">
@@ -235,7 +188,7 @@
         <script src="_ui/js/smoothScroll.js"></script>
         <script src="_ui/js/faded.js"></script>
         <script src="_ui/js/submitPHP.js"></script>
-        <!-- <script src="_ui/js/page.js"></script> -->
+        <script src="_ui/js/placeholder.js"></script>
         <!-- endbuild -->
     </body>
 </html>

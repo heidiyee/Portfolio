@@ -253,6 +253,18 @@ header.clutch .parallax {
   background-size: auto 400px;
   background-position: top right; }
 
+header.rezza .parallax {
+  position: relative;
+  background-color: #292831;
+  background-image: url("../assets/_rezza/rezza_logo.png");
+  background-position: center; }
+
+header.starbucks .parallax {
+  position: relative;
+  background-color: #115738;
+  background-image: url("../assets/_starbucks/starbucks-banner.jpg");
+  background-position: center; }
+
 @media only screen and (min-width: 530px) {
   header.nudge .parallax {
     background-size: auto 400px;
@@ -543,6 +555,14 @@ header.clutch .parallax {
       bottom: 40px;
       -webkit-transition: bottom 0.5s ease;
       transition: bottom 0.5s ease; }
+    .portfolio .container a.rezza {
+      background-color: #292831; }
+      .portfolio .container a.rezza figure img {
+        -o-object-fit: contain;
+        object-fit: contain;
+        height: 300px; }
+    .portfolio .container a.starbucks {
+      background-color: #f7c400; }
 
 @media only screen and (min-width: 750px) {
   .portfolio .container {
