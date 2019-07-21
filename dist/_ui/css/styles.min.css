@@ -129,50 +129,6 @@ html {
 .icon-thin-arrow:before {
   content: "\e907"; }
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1;
-  font-size: 62.5%; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 section {
   text-align: center;
   z-index: 2; }
@@ -252,6 +208,18 @@ header.clutch .parallax {
   background-image: url(../_ui/assets/_clutch/clutch.jpg);
   background-size: auto 400px;
   background-position: top right; }
+
+header.rezza .parallax {
+  position: relative;
+  background-color: #292831;
+  background-image: url("../assets/_rezza/rezza_logo.png");
+  background-position: center; }
+
+header.starbucks .parallax {
+  position: relative;
+  background-color: #115738;
+  background-image: url("../assets/_starbucks/starbucks-banner.jpg");
+  background-position: center; }
 
 @media only screen and (min-width: 530px) {
   header.nudge .parallax {
@@ -543,6 +511,14 @@ header.clutch .parallax {
       bottom: 40px;
       -webkit-transition: bottom 0.5s ease;
       transition: bottom 0.5s ease; }
+    .portfolio .container a.rezza {
+      background-color: #292831; }
+      .portfolio .container a.rezza figure img {
+        -o-object-fit: contain;
+        object-fit: contain;
+        height: 300px; }
+    .portfolio .container a.starbucks {
+      background-color: #f7c400; }
 
 @media only screen and (min-width: 750px) {
   .portfolio .container {
