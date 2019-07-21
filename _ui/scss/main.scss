@@ -9,10 +9,11 @@
 @import "helpers/parallax";
 
 //base
-@import "base/reset";
 @import "base/fonts";
+@import "base/reset";
 @import "base/global";
 @import "base/typography";
+// @import "base/fonts";
 
 //components
 @import "components/header";
